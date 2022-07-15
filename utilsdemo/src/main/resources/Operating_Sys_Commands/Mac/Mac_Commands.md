@@ -47,3 +47,19 @@ sudo pmset -a GPUSwitch 2
 将下面命令复制到终端:
 
 /bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+
+
+# 删除终端连接的历史记录
+
+# 查询连接记录
+
+# 下面用户名替换成你本机实际的用户名
+
+defaults read /Users/用户名/Library/Preferences/com.apple.Terminal.plist PreviousCommands
+
+# 删除连接记录
+
+# 下面用户名替换成你本机实际的用户名
+
+defaults delete /Users/用户名/Library/Preferences/com.apple.Terminal.plist PreviousCommands
+
