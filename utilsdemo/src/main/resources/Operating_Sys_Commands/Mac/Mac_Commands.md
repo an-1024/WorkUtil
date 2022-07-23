@@ -170,7 +170,18 @@ p10k configure
 
 ![mac 终端配置](../../photo/2.配置Mac终端最终结果.png)
 
+# mac 安装 unrar
+ unrar 是解压 xx.rar 的命令
 
+常用命令如下：
+
+```shell
+进到需要解压的文件夹：cd 'target_path'
+解压.rar文件到当前文件夹：unrar e 'file_name'
+解压.rar文件到指定路径：unrar x 'file_name' 'target_path'
+解压带密码的.rar文件到当前文件夹：unrar e -p'123' 'file_name'
+解压带密码的.rar文件到指定文件夹：unrar x -p'123' 'file_name' 'target_path'
+```
 
 
 
