@@ -213,6 +213,19 @@ command + s 保存，命名：openTerminal
 
 ![](../../photo/5.Automator_AppleScript_KeyMap.png)
 
+# Mac 无法创建公司日志的文件夹
 
+因为MAC 更新BigSur后默认有系统文件保护, 根目录没有权限 (其实从catalina起安全性提升就不可以了)
 
+## 解决办法
 
+使用synthetic.conf将文件挂载
+
+1. sudo vi /etc/synthetic.conf;
+2. 进行文件映射 or 软连接,如: data    Users/xxx_name/log;
+3. 注意必须使用 tab 键分隔，否则重启不会生效; 
+4. 上述是 : 建立data到Users/zkq/loga的链接 
+5. 必须重启电脑才会生效 
+6. 记得在你的用户目录下mkdir log
+
+做完这些步骤后, 我们可以看到, 在系统根目录下出现了 data 文件夹, 软连接到 /Users/xxx_name/log : 
