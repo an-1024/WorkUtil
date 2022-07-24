@@ -229,3 +229,37 @@ command + s 保存，命名：openTerminal
 6. 记得在你的用户目录下mkdir log
 
 做完这些步骤后, 我们可以看到, 在系统根目录下出现了 data 文件夹, 软连接到 /Users/xxx_name/log : 
+
+# Mac JDK 多环境配置
+
+编辑 vim  ～/.bash_profile 该文件，配置如下：
+
+```shell
+**export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home
+export JAVA_17_HOME=/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home
+export JAVA_HOME=$JAVA_8_HOME
+ 
+alias jdk8='export JAVA_HOME=$JAVA_8_HOME'
+alias jdk17='export JAVA_HOME=$JAVA_17_HOME'
+ 
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+```
+
+jdk 根据自己安全的版本来配置。填写自己的安装位置。
+
+保存后，要使其生效需要执行下面的命令:
+
+```shell
+source ~/.bash_profile
+source /etc/profile
+```
+
+备注：source后边必须跟"/etc/profile" 这个路径，否则通过alias别名切换jdk版本可能会失败。
+
+ 使用命令验证 java 版本是否切换正确
+ 
+```shell
+java -version
+```
+

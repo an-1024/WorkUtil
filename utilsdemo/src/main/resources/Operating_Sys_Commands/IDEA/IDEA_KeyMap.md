@@ -11,3 +11,20 @@
 
 MAC：command + shift + u
 Win：ctrl + shift + u
+
+
+# idea 编译代码报错
+
+错误日志:
+
+```text
+java: JPS incremental annotation processing is disabled. Compilation results on partial recompilation may be inaccurate. Use build process "jps.track.ap.dependencies" VM flag to enable/disable incremental annotation processing environment.
+```
+解决方案：
+
+![](../../photo/6.idea_JPS_Error.png)
+```text
+-Djps.track.ap.dependencies=false
+```
+
+
