@@ -182,6 +182,36 @@ p10k configure
 解压带密码的.rar文件到当前文件夹：unrar e -p'123' 'file_name'
 解压带密码的.rar文件到指定文件夹：unrar x -p'123' 'file_name' 'target_path'
 ```
+# mac 设置启动 Terminal 的快捷键
+
+## 找到 Automator
+
+command + space，在聚焦搜索中搜索 Automator , 然后在你的任务兰中单击 Automator, 选取服务：
+
+![Automator样列](../../photo/2.Automator样列.png)
+
+进入操作页面后，选择使用工具, 点击右侧的 AppleScript。 如下图:
+
+![Automator_AppleScript](../../photo/3.Automator_AppleScript.png)
+
+双击运行 AppScript 然后将右边的文本输入修改为如下程序:
+
+![Automator_AppScript_Run](../../photo/4.Automator_AppleScript_Run.png)
+
+```shell
+on run {input, parameters}
+     (* Your script goes here *)
+     tell application "Terminal"         
+          reopen         
+          activate        
+         end tell
+end run
+```
+command + s 保存，命名：openTerminal
+
+然后退出啊，点击左上角的苹果图标，选择偏好设置-》键盘设置-》快捷键-》服务，找到刚才命名的服务，选中添加快捷键，然后推出，使用快捷键测试是否生效。
+
+![](../../photo/5.Automator_AppleScript_KeyMap.png)
 
 
 
