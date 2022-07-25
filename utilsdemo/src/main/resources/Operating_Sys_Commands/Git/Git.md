@@ -67,3 +67,14 @@ git reset --hard HEAD~3        回退到前3次提交之前，以此类推，回
 git reset --hard commit_id     退到/进到 指定commit的代码
 
 git push origin HEAD --force   强制推到远程
+
+# github 443 无法访问
+
+添加 VPN 的代理接口(前提是你有梯子)
+
+添加全局代理:  
+
+```shell
+git config --global http.proxy xxxxx // 你的代理接口地址
+```
+
