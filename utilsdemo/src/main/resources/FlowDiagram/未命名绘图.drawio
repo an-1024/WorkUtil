@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T07:38:38.329Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="j0h3YNjfFa_1gM6uPTXW" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-02T07:49:38.478Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="t7rbDDSlOakLm5y4q4Di" version="20.0.4" type="github">
   <diagram id="WzIYKn9JWgPCPKjEJvRS" name="Page-1">
     <mxGraphModel dx="1038" dy="1725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -100,46 +100,60 @@
         <mxCell id="H4bbrRVj7kRqIUKwOBPa-8" value="注解" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="1220" y="-820" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="H4bbrRVj7kRqIUKwOBPa-10" target="H4bbrRVj7kRqIUKwOBPa-14">
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-33" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1220" y="-720" width="1130" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-10" value="XML" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="H4bbrRVj7kRqIUKwOBPa-33">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-14" value="加载 XML 文件" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="H4bbrRVj7kRqIUKwOBPa-33">
+          <mxGeometry x="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="H4bbrRVj7kRqIUKwOBPa-33" source="H4bbrRVj7kRqIUKwOBPa-10" target="H4bbrRVj7kRqIUKwOBPa-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-10" value="XML" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="-720" width="120" height="60" as="geometry" />
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-16" value="解析XML" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="H4bbrRVj7kRqIUKwOBPa-33">
+          <mxGeometry x="320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="H4bbrRVj7kRqIUKwOBPa-14" target="H4bbrRVj7kRqIUKwOBPa-16">
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="H4bbrRVj7kRqIUKwOBPa-33" source="H4bbrRVj7kRqIUKwOBPa-14" target="H4bbrRVj7kRqIUKwOBPa-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-14" value="加载 XML 文件" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1380" y="-720" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="H4bbrRVj7kRqIUKwOBPa-16" target="H4bbrRVj7kRqIUKwOBPa-18">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-16" value="解析XML" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1540" y="-720" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="H4bbrRVj7kRqIUKwOBPa-18" target="H4bbrRVj7kRqIUKwOBPa-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="H4bbrRVj7kRqIUKwOBPa-18">
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="H4bbrRVj7kRqIUKwOBPa-33" source="H4bbrRVj7kRqIUKwOBPa-18">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1880" y="-780" as="targetPoint" />
+            <mxPoint x="670" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-18" value="创建BeanDefinition&lt;br&gt;承载XML的各种属性" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1710" y="-720" width="160" height="60" as="geometry" />
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-18" value="创建BeanDefinition&lt;br&gt;承载XML的各种属性" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="H4bbrRVj7kRqIUKwOBPa-33">
+          <mxGeometry x="490" width="160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="H4bbrRVj7kRqIUKwOBPa-20">
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="H4bbrRVj7kRqIUKwOBPa-33" source="H4bbrRVj7kRqIUKwOBPa-16" target="H4bbrRVj7kRqIUKwOBPa-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-20" value="生成 Bean 对象" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="H4bbrRVj7kRqIUKwOBPa-33">
+          <mxGeometry x="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="H4bbrRVj7kRqIUKwOBPa-33" source="H4bbrRVj7kRqIUKwOBPa-18" target="H4bbrRVj7kRqIUKwOBPa-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-27" value="BeanDefinition包含了对 Bean 对象的各种操作：创建、销毁、初始化等" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="H4bbrRVj7kRqIUKwOBPa-33">
+          <mxGeometry x="580" y="100" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="H4bbrRVj7kRqIUKwOBPa-33" source="H4bbrRVj7kRqIUKwOBPa-20" target="H4bbrRVj7kRqIUKwOBPa-27">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1880" y="-770" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1970" y="-750" />
-              <mxPoint x="1880" y="-750" />
-            </Array>
+            <mxPoint x="670" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="H4bbrRVj7kRqIUKwOBPa-20" value="生成 Bean 对象" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1910" y="-720" width="120" height="60" as="geometry" />
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-29" value="放入容器" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="H4bbrRVj7kRqIUKwOBPa-33">
+          <mxGeometry x="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="H4bbrRVj7kRqIUKwOBPa-33" source="H4bbrRVj7kRqIUKwOBPa-20" target="H4bbrRVj7kRqIUKwOBPa-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-31" value="从容器中获取" style="whiteSpace=wrap;html=1;fontSize=14;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;rounded=1;" vertex="1" parent="H4bbrRVj7kRqIUKwOBPa-33">
+          <mxGeometry x="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H4bbrRVj7kRqIUKwOBPa-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="H4bbrRVj7kRqIUKwOBPa-33" source="H4bbrRVj7kRqIUKwOBPa-29" target="H4bbrRVj7kRqIUKwOBPa-31">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
