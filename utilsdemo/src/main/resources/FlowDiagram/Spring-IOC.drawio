@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T11:23:15.268Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="5m0GVbxAVlak8aqvi8a6" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-02T12:11:31.857Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="EAbYUZq4h_5x42Yuw_4L" version="20.2.2" type="github">
   <diagram id="WzIYKn9JWgPCPKjEJvRS" name="Page-1">
     <mxGraphModel dx="830" dy="1614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -162,10 +162,10 @@
           <mxGeometry width="730" height="500" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-3" value="IOC Container" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
-          <mxGeometry x="290" y="14" width="90" height="30" as="geometry" />
+          <mxGeometry x="315" y="10" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-22" value="BeanDefinition 创建" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
-          <mxGeometry x="10" y="430" width="120" height="60" as="geometry" />
+          <mxGeometry x="40" y="430" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-80" value="创建bean对象&lt;br&gt;实例化" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
           <mxGeometry x="591" y="430" width="120" height="60" as="geometry" />
@@ -210,7 +210,42 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-119" value="Spring bean 的大致流程介绍，实际的实现并不是这样" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
-          <mxGeometry x="160" y="410" width="110" height="45" as="geometry" />
+          <mxGeometry x="180" y="410" width="110" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-122" value="创建bean对象&lt;br&gt;实例化" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
+          <mxGeometry x="591" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-123" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="Li9awI9Rj4b1zbL3ckWH-4" source="Li9awI9Rj4b1zbL3ckWH-22" target="Li9awI9Rj4b1zbL3ckWH-122">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-124" value="﻿AutowireCapableBeanFactory：扩展" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-123">
+          <mxGeometry x="-0.3827" relative="1" as="geometry">
+            <mxPoint x="10" y="89" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-125" value="﻿DefaultListableBeanFactory" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-123">
+          <mxGeometry x="-0.5121" y="1" relative="1" as="geometry">
+            <mxPoint x="11" y="93" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-126" value="﻿BeanFactory" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-123">
+          <mxGeometry x="-0.2953" relative="1" as="geometry">
+            <mxPoint y="57" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-127" value="﻿BeanPostProcessor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-123">
+          <mxGeometry x="-0.3119" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-128" value="﻿BeanFactoryPostProcessor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-123">
+          <mxGeometry x="-0.2053" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-14" value="" style="group" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-1">
           <mxGeometry x="-30" y="410" width="341" height="390" as="geometry" />
@@ -305,6 +340,9 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="680" y="940" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-121" value="Spring 中对 Bean 的操作提提供了工厂类&lt;br&gt;BeanFactory&lt;br&gt;该类是访问 IOC 容器的根接口" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-1">
+          <mxGeometry x="610" y="250" width="730" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hODroTGBOnxEAEhghBja-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="hODroTGBOnxEAEhghBja-10" target="hODroTGBOnxEAEhghBja-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
