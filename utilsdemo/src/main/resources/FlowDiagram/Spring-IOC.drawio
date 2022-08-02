@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T09:47:25.978Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="O__dhrbeIfQwFGUXVgox" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-02T10:31:25.329Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="mfFV7dMSnOxsZopM5aue" version="20.2.2" type="github">
   <diagram id="WzIYKn9JWgPCPKjEJvRS" name="Page-1">
     <mxGraphModel dx="1038" dy="1725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -156,7 +156,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-4" value="" style="group" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-1">
-          <mxGeometry x="170" y="220" width="730" height="500" as="geometry" />
+          <mxGeometry x="470" y="220" width="730" height="500" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
           <mxGeometry width="730" height="500" as="geometry" />
@@ -164,29 +164,51 @@
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-3" value="IOC Container" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
           <mxGeometry x="290" y="14" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Li9awI9Rj4b1zbL3ckWH-8" value="" style="group" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-1">
-          <mxGeometry x="-20" y="300" width="120" height="390" as="geometry" />
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-14" value="" style="group" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-1">
+          <mxGeometry x="-170" y="310" width="341" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="Li9awI9Rj4b1zbL3ckWH-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-8">
-          <mxGeometry width="120" height="390" as="geometry" />
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-8" value="" style="group;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-14">
+          <mxGeometry x="181" width="160" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="Li9awI9Rj4b1zbL3ckWH-7" value="Spring 加载解析文件" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-8">
-          <mxGeometry x="15" y="10" width="90" height="30" as="geometry" />
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-8">
+          <mxGeometry width="160" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-7" value="Spring 加载解析定义 bean 对象信息的文件" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-8">
+          <mxGeometry x="20" y="10" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-9" value="XML 文件&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-8">
-          <mxGeometry y="80" width="120" height="60" as="geometry" />
+          <mxGeometry y="80" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-10" value="YML 文件&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-8">
-          <mxGeometry y="165" width="120" height="60" as="geometry" />
+          <mxGeometry y="180" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-12" value="Properties 文件&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-8">
-          <mxGeometry y="270" width="120" height="60" as="geometry" />
+          <mxGeometry y="270" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="Li9awI9Rj4b1zbL3ckWH-14" source="Li9awI9Rj4b1zbL3ckWH-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="171" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-5" value="1.需要初始一个 bean 对象" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-14">
+          <mxGeometry y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-17" value="抽象类&lt;br&gt;﻿BeanDefinitionReader&lt;br&gt;实现不同的文件解析协议" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-1">
+          <mxGeometry x="290" y="475" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Li9awI9Rj4b1zbL3ckWH-1" source="Li9awI9Rj4b1zbL3ckWH-9" target="Li9awI9Rj4b1zbL3ckWH-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Li9awI9Rj4b1zbL3ckWH-1" source="Li9awI9Rj4b1zbL3ckWH-12" target="Li9awI9Rj4b1zbL3ckWH-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Li9awI9Rj4b1zbL3ckWH-1" source="Li9awI9Rj4b1zbL3ckWH-10" target="Li9awI9Rj4b1zbL3ckWH-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="500" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="hODroTGBOnxEAEhghBja-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="hODroTGBOnxEAEhghBja-10" target="hODroTGBOnxEAEhghBja-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Li9awI9Rj4b1zbL3ckWH-5" value="1.需要初始一个 bean 对象" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="10" y="-350" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
