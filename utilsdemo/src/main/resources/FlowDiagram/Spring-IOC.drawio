@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T12:15:22.984Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="OffSbBRLG_COpnPEYF5b" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-02T12:41:49.892Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="HJPs1bQdH25hwUmQGudd" version="20.2.2" type="github">
   <diagram id="WzIYKn9JWgPCPKjEJvRS" name="Page-1">
-    <mxGraphModel dx="1384" dy="1910" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="798" dy="1597" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -250,8 +250,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Li9awI9Rj4b1zbL3ckWH-130" value="后置处理器&lt;br&gt;bean 增强" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
-          <mxGeometry x="170" y="90" width="70" height="30" as="geometry" />
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-130" value="后置处理器bean 增强" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
+          <mxGeometry x="140" y="90" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-132" value="修改 beanDefinition信息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
+          <mxGeometry x="175" y="70" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-133" value="增强 bean 信息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
+          <mxGeometry x="155" y="110" width="85" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-14" value="" style="group" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-1">
           <mxGeometry x="-30" y="410" width="341" height="390" as="geometry" />
