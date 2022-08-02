@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-02T12:41:49.892Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="HJPs1bQdH25hwUmQGudd" version="20.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-02T13:03:18.558Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="25xwQCpjAC1Q4gesniAG" version="20.2.2" type="github">
   <diagram id="WzIYKn9JWgPCPKjEJvRS" name="Page-1">
     <mxGraphModel dx="798" dy="1597" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -258,6 +258,24 @@
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-133" value="增强 bean 信息" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
           <mxGeometry x="155" y="110" width="85" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-134" value="填充属性" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
+          <mxGeometry x="591" y="120" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-135" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Li9awI9Rj4b1zbL3ckWH-4" source="Li9awI9Rj4b1zbL3ckWH-122" target="Li9awI9Rj4b1zbL3ckWH-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-136" value="设置 Aware 接口的属性(作用)" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
+          <mxGeometry x="591" y="180" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-137" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Li9awI9Rj4b1zbL3ckWH-4" source="Li9awI9Rj4b1zbL3ckWH-134" target="Li9awI9Rj4b1zbL3ckWH-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-138" value="初始化" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="Li9awI9Rj4b1zbL3ckWH-4">
+          <mxGeometry x="591" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Li9awI9Rj4b1zbL3ckWH-139" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Li9awI9Rj4b1zbL3ckWH-4" source="Li9awI9Rj4b1zbL3ckWH-136" target="Li9awI9Rj4b1zbL3ckWH-138">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-14" value="" style="group" vertex="1" connectable="0" parent="Li9awI9Rj4b1zbL3ckWH-1">
           <mxGeometry x="-30" y="410" width="341" height="390" as="geometry" />
