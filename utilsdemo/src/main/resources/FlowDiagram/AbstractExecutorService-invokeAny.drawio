@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-13T08:25:45.618Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="vThNBFSA9bIPIY4Whc9o" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-13T08:26:52.136Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="3qgbUM9oXPV0-mAMmi66" version="20.2.3" type="github">
   <diagram id="Ynf6QPGDEZ-ptIwz1Awv" name="第 1 页">
     <mxGraphModel dx="2125" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -90,7 +90,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-60" value="如果为 null" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-60" value="如果为 null" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="125" y="750" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-90" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-62" target="_4qr_AEgsPWRSvo8s8fp-89">
@@ -115,7 +115,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-65" value="如果 ntask &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-65" value="如果 ntask &amp;gt; 0" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="270" y="750" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-67" target="_4qr_AEgsPWRSvo8s8fp-62">
@@ -135,7 +135,7 @@
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-72" target="_4qr_AEgsPWRSvo8s8fp-94">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-72" value="active == 0" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-72" value="active == 0" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="270" y="850" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-74" target="_4qr_AEgsPWRSvo8s8fp-78">
@@ -172,7 +172,7 @@
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-83" value="遍历 Future 集合，调用 Future 取消任务" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="670" y="1020" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-85" value="抛出异常 throw ee" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-85" value="抛出异常 throw ee" style="whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="860" y="1020" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-89">
@@ -183,7 +183,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-89" value="active++ 任务执行计数 +1" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-89" value="active++ 任务执行计数 +1" style="whiteSpace=wrap;html=1;fillColor=#f0a30a;strokeColor=#BD7000;rounded=1;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="820" y="740" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-94" target="_4qr_AEgsPWRSvo8s8fp-96">
@@ -205,7 +205,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-94" value="是否指定了超时时间&lt;br&gt;timed" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-94" value="是否指定了超时时间&lt;br&gt;timed" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="270" y="935" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-96" target="_4qr_AEgsPWRSvo8s8fp-99">
@@ -257,7 +257,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-111" value="遍历 Future 集合，调用 Future 取消任务" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-111" value="遍历 Future 集合，调用 Future 取消任务" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="540" y="1130" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-119">
@@ -268,7 +268,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-119" value="&amp;nbsp;从 ecs 移除 Future" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-119" value="&amp;nbsp;从 ecs 移除 Future" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;rounded=1;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="250" y="1060" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-129" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-125" target="_4qr_AEgsPWRSvo8s8fp-128">
@@ -300,10 +300,10 @@
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_4qr_AEgsPWRSvo8s8fp-134" target="_4qr_AEgsPWRSvo8s8fp-136">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-134" value="遍历 Future 集合，调用 Future 取消任务" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-134" value="遍历 Future 集合，调用 Future 取消任务" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="-127.5" y="1050" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="_4qr_AEgsPWRSvo8s8fp-136" value="抛出异常 throw ee" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
+        <mxCell id="_4qr_AEgsPWRSvo8s8fp-136" value="抛出异常 throw ee" style="whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="-127.5" y="1140" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_4qr_AEgsPWRSvo8s8fp-138" value="正常返回结果" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;" vertex="1" parent="1">
