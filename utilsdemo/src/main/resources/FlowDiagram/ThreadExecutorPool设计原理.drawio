@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-13T13:03:53.794Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="ahhBLr5FNLzF4dm0msrl" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-14T06:04:44.778Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="J2651raFbNpj3vMVBJkc" version="20.2.3" type="github">
   <diagram id="qDcCzP3CeafEvzEoM1-i" name="第 1 页">
-    <mxGraphModel dx="1722" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1722" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,48 +8,72 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-2" value="搞个工厂接单:&lt;br&gt;threadFactory：线程池" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-520" y="115" width="170" height="40" as="geometry" />
+          <mxGeometry x="-787" y="115" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-8" target="VEzMDb03vrcIsyC3KS1A-2">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-326" y="50" as="targetPoint" />
+            <mxPoint x="-593" y="50" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-8" value="task" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
-          <mxGeometry x="-480" y="20" width="90" height="60" as="geometry" />
+          <mxGeometry x="-747" y="20" width="90" height="60" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-12" target="VEzMDb03vrcIsyC3KS1A-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-12" value="指定长期正式员工数量corePoolSize：核心线程数" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="-517.5" y="195" width="165" height="50" as="geometry" />
+          <mxGeometry x="-784.5" y="195" width="165" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-14" target="VEzMDb03vrcIsyC3KS1A-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-14" value="核心员工干不完了，又不想增加成本，那就先搞个仓库把这些任务存起来：&lt;br&gt;workQueue：任务队列" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="-540" y="285" width="210" height="50" as="geometry" />
+          <mxGeometry x="-807" y="285" width="210" height="50" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-17" target="VEzMDb03vrcIsyC3KS1A-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-17" value="生意太好了，仓库都放不下了，为了给雇主们好的体验，得找些临时工了：&lt;br&gt;maximumPoolSize：最大线程数" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="-540" y="380" width="210" height="60" as="geometry" />
+          <mxGeometry x="-807" y="380" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-20" target="VEzMDb03vrcIsyC3KS1A-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-20" value="临时工也是有成本的，干完活就让它滚蛋吧，限定一个时间让它走人：&lt;br&gt;keepAliveTime：非核心线程存活时间" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="-540" y="485" width="210" height="60" as="geometry" />
+          <mxGeometry x="-807" y="485" width="210" height="60" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-22" target="VEzMDb03vrcIsyC3KS1A-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-22" value="走的时间必须精准，多一分就得多花一分钱：&lt;br&gt;unit：计时单位" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="-505" y="595" width="140" height="60" as="geometry" />
+          <mxGeometry x="-772" y="595" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VEzMDb03vrcIsyC3KS1A-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-26" target="VEzMDb03vrcIsyC3KS1A-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VEzMDb03vrcIsyC3KS1A-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-26" target="VEzMDb03vrcIsyC3KS1A-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VEzMDb03vrcIsyC3KS1A-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-26" target="VEzMDb03vrcIsyC3KS1A-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VEzMDb03vrcIsyC3KS1A-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VEzMDb03vrcIsyC3KS1A-26" target="VEzMDb03vrcIsyC3KS1A-34">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="VEzMDb03vrcIsyC3KS1A-26" value="工厂场地有限，招聘了临时员工也忙不过来了，只能忍痛拒绝用户了，但是也要区别对待&lt;br&gt;handler：拒绝策略" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="-560" y="695" width="250" height="60" as="geometry" />
+          <mxGeometry x="-827" y="695" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VEzMDb03vrcIsyC3KS1A-28" value="AbortPolicy:&amp;nbsp; 只要忙不过来就全部拒绝：&lt;br&gt;抛出:&amp;nbsp;RejectedExecutionException&amp;nbsp; 异常" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="665" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VEzMDb03vrcIsyC3KS1A-30" value="CallerRunsPolicy：谁拒绝这个任务谁就要去负责执行这个任务(在任务来临的时候)" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="710" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VEzMDb03vrcIsyC3KS1A-32" value="DiscardPolicy：直接抛弃，没有任何输出，不建议使用。" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="755" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VEzMDb03vrcIsyC3KS1A-34" value="DiscardOldestPolicy：将任务队列中等待时间最长的任务丢弃，将新的任务放入。就像来了大客户，优先高，得先做。" style="whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=#b46504;rounded=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-500" y="800" width="330" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
