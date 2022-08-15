@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-06T15:02:16.289Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="jOLk3JVu2q3zh6z-9iRH" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-15T02:54:57.489Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="KHj-wfQJM07mxyyBIOnD" version="20.2.2" type="github">
   <diagram id="WzIYKn9JWgPCPKjEJvRS" name="Page-1">
-    <mxGraphModel dx="2066" dy="2323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1941" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,7 +22,7 @@
         <mxCell id="hODroTGBOnxEAEhghBja-7" value="Spirng 是 Spring 系列框架应用的基石，其他两个应用框架是建立在该应用的基础&lt;br&gt;了解 Spring 的源码，有助于对于其他两个框架设计的理解" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="99" y="-1150" width="630" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="hODroTGBOnxEAEhghBja-8" value="了解 Spring 可以做什么&lt;br&gt;基于 Spring 二次开发，学习起设计思想，规范自己的代码格式&lt;br&gt;面试最重要" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+        <mxCell id="hODroTGBOnxEAEhghBja-8" value="了解 Spring 可以做什么&lt;br&gt;基于 Spring 二次开发，学习设计思想。向大佬学习" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="140" y="-1030" width="530" height="60" as="geometry" />
         </mxCell>
         <mxCell id="hODroTGBOnxEAEhghBja-10" value="Spring 重要的两大特性" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
@@ -386,7 +386,7 @@
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-138" value="BeanPostProcessor：before" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1519" y="-280" width="161" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Zu4FfBSD2HwqoZo6TJjG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Li9awI9Rj4b1zbL3ckWH-140" target="Zu4FfBSD2HwqoZo6TJjG-1">
+        <mxCell id="Zu4FfBSD2HwqoZo6TJjG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Li9awI9Rj4b1zbL3ckWH-140" target="Zu4FfBSD2HwqoZo6TJjG-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Li9awI9Rj4b1zbL3ckWH-140" value="执行 bean 的初始化方法" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" parent="1" vertex="1">
@@ -413,10 +413,10 @@
         <mxCell id="r40IQoEKzJKfSHBl_AKU-11" value="Spring 是怎么处理在不同的阶段处理不同的工作，应该怎么办？&lt;br&gt;观察者模式：监听器、监听事件、广播器" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="270" y="300" width="1730" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Zu4FfBSD2HwqoZo6TJjG-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Zu4FfBSD2HwqoZo6TJjG-1" target="Li9awI9Rj4b1zbL3ckWH-158">
+        <mxCell id="Zu4FfBSD2HwqoZo6TJjG-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Zu4FfBSD2HwqoZo6TJjG-1" target="Li9awI9Rj4b1zbL3ckWH-158" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Zu4FfBSD2HwqoZo6TJjG-1" value="BeanPostProcessor：after" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Zu4FfBSD2HwqoZo6TJjG-1" value="BeanPostProcessor：after" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1520" y="-175" width="161" height="30" as="geometry" />
         </mxCell>
       </root>
