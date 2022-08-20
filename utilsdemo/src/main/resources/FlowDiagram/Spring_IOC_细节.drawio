@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-20T15:49:30.986Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="bG2MTVL4lK5Z2UVHWQ9i" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-20T16:13:25.753Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="Skpkigs1VlQ0VKkZiWVg" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="2519" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3202" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -93,14 +93,54 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-26" value="doResolvePlaceholders(String text, PropertyPlaceholderHelper helper)实现对了资源路径的解析" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-710" y="350" width="440" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=14;fontColor=#FF0000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-31" target="-McDBByZdcgpEU9wJOO_-35">
+        <mxCell id="-McDBByZdcgpEU9wJOO_-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=14;fontColor=#FF0000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-31" target="-McDBByZdcgpEU9wJOO_-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-31" value="refresh() 完成了 bean 的创建过程" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="-McDBByZdcgpEU9wJOO_-39" value="&lt;div style=&quot;text-align: left;&quot;&gt;给 Spring&lt;/div&gt;一些基础属性&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;赋值&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontFamily=Verdana;fontColor=#000000;" vertex="1" connectable="0" parent="-McDBByZdcgpEU9wJOO_-36">
+          <mxGeometry x="0.007" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-31" value="refresh() 完成了 bean 的创建过程；以下流程是 refresh 细节" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="354" y="360" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=14;fontColor=#000000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-35" target="-McDBByZdcgpEU9wJOO_-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-40" value="创建 BeanFactory 工厂" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontFamily=Verdana;fontColor=#000000;" vertex="1" connectable="0" parent="-McDBByZdcgpEU9wJOO_-38">
+          <mxGeometry x="-0.3238" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-35" value="prepareRefresh&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;this.startupDate = System.currentTimeMillis() 启动时间赋值&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.closed.set(false);&amp;nbsp;&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.active.set(true);&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;initPropertySources() 父类留给子类有关环境属性的扩展方法，父类没有实现具体逻辑&lt;/font&gt;&lt;/li&gt;&lt;li&gt;getEnvironment().validateRequiredProperties() 校验环境属性是否全部填充完成&lt;br&gt;&lt;/li&gt;&lt;li&gt;earlyApplicationListeners、applicationListeners 在 Spring Boot 中会提前加载很多事件监听器(14 个)：逻辑是判断 earlyApplicationListeners 集合是否为 null，如果为 null 将 applicationListeners 集合赋值给 earlyApplicationListeners；反之，则将 applicationListeners 集合清空，将原有 earlyApplicationListeners 赋值给 applicationListeners (Spring Boot 中就是利用了这个逻辑)&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-380" y="440" width="630" height="170" as="geometry" />
+          <mxGeometry x="89" y="560" width="650" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Verdana;fontSize=14;fontColor=#FFFF00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-37" target="-McDBByZdcgpEU9wJOO_-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-37" value="obtainFreshBeanFactory&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#e06d0d&quot;&gt;refreshBeanFactory(); 针对 beanFactory的一系例操作&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;getBeanFactory 获取创建成功的 BeanFactory&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="99" y="780" width="630" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Verdana;fontSize=14;fontColor=#FFFF00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-43" target="-McDBByZdcgpEU9wJOO_-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-43" value="refreshBeanFactory&lt;br&gt;&lt;ol&gt;&lt;li&gt;存在 BeanFactory 就销毁&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;创建 BeanFactory 工厂&amp;nbsp;DefaultListableBeanFactory beanFactory = createBeanFactory()&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#E06D0D;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-550" y="570" width="510" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=14;fontColor=#FF0000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-47" target="-McDBByZdcgpEU9wJOO_-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-47" value="createBeanFactory&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;创建了一个DefaultListableBeanFactory对象，又是一层层的 super&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-990" y="460" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=14;fontColor=#FF0000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-50" target="-McDBByZdcgpEU9wJOO_-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-50" value="DefaultListableBeanFactory&lt;br&gt;&lt;ol&gt;&lt;li&gt;boolean allowBeanDefinitionOverriding = true&amp;nbsp;是否允许重新注册具有相同名称的不同定义&lt;br&gt;&lt;/li&gt;&lt;li&gt;boolean allowEagerClassLoading = true&lt;br&gt;&lt;/li&gt;&lt;li&gt;AutowireCandidateResolver autowireCandidateResolver = SimpleAutowireCandidateResolver.INSTANCE&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1820" y="420" width="780" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-52" value="AbstractAutowireCapableBeanFactory&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1647.5" y="555" width="435" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
