@@ -1,1 +1,52 @@
-<mxfile host="app.diagrams.net" modified="2022-08-20T00:34:41.143Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" version="20.2.3" etag="sntPyzUkUMFayY3rTTe0" type="github"><diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">7VhZc9MwEP41Hp5gfBQnecRp0wKhU2ihw6NiK7aI7DWynINfzyqWYzsOOYD0yDQv0a43K2m/b4/YcPrx/FKQNPoEAeWGbQZzwzk3bNuybQe/lGZRaLq9bqEIBQu0UaW4Zb+oVppam7OAZg1DCcAlS5tKH5KE+rKhI0LArGk2Bt7cNSUhbSlufcLb2nsWyEjfwu5U+ivKwqjc2XJ7xZOYlMb6JllEApjVVM6F4fQFgCxW8bxPuQpeGZf794t7Ppy4lx8+Zz/JV+/j3fW314WzwSE/WV1B0ET+X9d24XpKeK7jpe8qF2UABeRJQJUT03C8SMYclxYuf1ApFxpwkktAFQgZQQgJ4UOAVNuNIZHazFIyTYJ3CliURxz8SaEaMM71Hihp+y5KmRQwWWGnHKyAUMacjCj3iD8JlwftAweBjxJIqHIVIBn0XarDXVRab8/YagwyyIVPt9jpbJFEhHSbP7ewU+er8VQjd0khplIs0EBQTiSbNslMdE6EK7sKd1xo6A+ggdOiwZDEqcp6oFnySuJqBmKyhRsKl1nEJL1NyTJAMywnTb7UeYBX9UJOskyjuAPkw0CaUiHpfGtYy6euzu2yuGlxVlUKq0z/qFYlzswjAXHWAuI7Fs+XlPyXlHT3TMmyY+3MSU2Wkhh7p6j2dAMskTUTGI8zPNg6dVYb/j2b3rbYdA0tMu3G41nT7ZHI1DmMS9aT55L7hxbhcgyDNxK4CtUq5XkYIlnQXWI4g3btiiAe5dnudtHAWDFoQGLGVbyuKJ9SyXyyoakQzkLc99xHuKnYTB7ckiUhSm4l3S3JivX3iM2m02w2K7nebcwN3aZ7rG7TaWF6g+gV0NkmX+J7Yh3fsddA6D12y+/uU6SfdQl+8I5fVtPdLd/as0xr9phvHPw0CPT0p4DeXjPlyxhwHIbZpzYIlCes8cnL+ag9CYxykSwHAcjlyySwbRKwNzWhB50EykJYA/ULTQlDMM3hKc4B6//8z5zHngPKStGEgKuY2maRYSeGwfos5ljHwwDF6k1tUQqr993OxW8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-08-20T09:53:30.157Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="xYuH8QiTMGJ2VFdEoWSy" version="20.2.5" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1298" dy="776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vhB5iVHmFAJZdGOzhbKn-0" target="vhB5iVHmFAJZdGOzhbKn-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-0" value="Spring IOC 细节-&amp;gt; XML的bean加载" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="290" y="20" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vhB5iVHmFAJZdGOzhbKn-5" target="vhB5iVHmFAJZdGOzhbKn-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-5" value="ClassPathXmlApplicationContext(&quot;classpath:spring-config.xml&quot;)&lt;br&gt;指定加载文件位置" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="234" y="80" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vhB5iVHmFAJZdGOzhbKn-8" target="vhB5iVHmFAJZdGOzhbKn-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-8" value="super(parent); 父级的层层调用，初始化 Spring Factory的属性值" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="247" y="160" width="334" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vhB5iVHmFAJZdGOzhbKn-10" target="vhB5iVHmFAJZdGOzhbKn-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vhB5iVHmFAJZdGOzhbKn-10" target="vhB5iVHmFAJZdGOzhbKn-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-10" value="&lt;font color=&quot;#ff3333&quot;&gt;&lt;b&gt;validating = true // XML 文档是否需要校验&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="887.5" y="50" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vhB5iVHmFAJZdGOzhbKn-12" target="vhB5iVHmFAJZdGOzhbKn-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-12" value="&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff3333&quot;&gt;&lt;b&gt;String[] configLocations 配置文件路径&lt;/b&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;setIdCalled = false 是否重新设置 bean 名称 ：fasle表示可以， true 表示不能自定义&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="750" y="120" width="515" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vhB5iVHmFAJZdGOzhbKn-15" target="vhB5iVHmFAJZdGOzhbKn-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-15" value="&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Boolean allowBeanDefinitionOverriding是否允许 beanDefinition 定义被覆盖&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Boolean allowCircularReferences 允许循环引用&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;DefaultListableBeanFactory beanFactory ：beanFactory 工厂定义&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;align=left;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="768.75" y="170" width="477.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-18" value="&lt;ol&gt;&lt;li&gt;String MESSAGE_SOURCE_BEAN_NAME = &quot;messageSource&quot; 消息解析器， 未指定加载父类的消息解析器&lt;br&gt;&lt;/li&gt;&lt;li&gt;String LIFECYCLE_PROCESSOR_BEAN_NAME = &quot;lifecycleProcessor&quot; 生命周期处理器，为提供默认使用DefaultLifecycleProcessor&lt;/li&gt;&lt;li&gt;String APPLICATION_EVENT_MULTICASTER_BEAN_NAME = &quot;applicationEventMulticaster&quot; 应用事件广播，未指定默认使用SimpleApplicationEventMulticaster&lt;br&gt;&lt;/li&gt;&lt;li&gt;String id = ObjectUtils.identityToString(this) 应用id 赋值&lt;br&gt;&lt;/li&gt;&lt;li&gt;String displayName = ObjectUtils.identityToString(this) 显示名称赋值&lt;br&gt;&lt;/li&gt;&lt;li&gt;ApplicationContext parent 父类上下文&lt;br&gt;&lt;/li&gt;&lt;li&gt;ConfigurableEnvironment environment 应用执行环境&lt;br&gt;&lt;/li&gt;&lt;li&gt;final List&amp;lt;BeanFactoryPostProcessor&amp;gt; beanFactoryPostProcessors = new ArrayList&amp;lt;&amp;gt;() 实例化前置处理器集合&lt;br&gt;&lt;/li&gt;&lt;li&gt;long startupDate 应用开始启动时间&lt;br&gt;&lt;/li&gt;&lt;li&gt;final AtomicBoolean active = new AtomicBoolean() 应用是否正在运行&lt;/li&gt;&lt;li&gt;final AtomicBoolean closed = new AtomicBoolean() 应用是否已经关闭&lt;br&gt;&lt;/li&gt;&lt;li&gt;final Object startupShutdownMonitor = new Object() 刷新和销毁的同步监视器&lt;/li&gt;&lt;li&gt;Thread shutdownHook&amp;nbsp; 如果已经注册JVM钩子函数，那么该变量就是JVM 钩子函数的引用&lt;br&gt;&lt;/li&gt;&lt;li&gt;ResourcePatternResolver resourcePatternResolver; 资源解析器&lt;br&gt;&lt;/li&gt;&lt;li&gt;LifecycleProcessor lifecycleProcessor; 生命周期处理器&lt;br&gt;&lt;/li&gt;&lt;li&gt;MessageSource messageSource 国际化的实现&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="683.13" y="240" width="916.87" height="260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
