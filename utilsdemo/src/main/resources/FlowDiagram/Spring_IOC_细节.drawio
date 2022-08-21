@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-21T15:17:27.690Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="FyUP1uV9QOB-xB1Yi30D" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-21T15:42:35.386Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="qUq27mBg0oH49pBNIJhT" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="4939" dy="2057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -248,8 +248,11 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-83" value="String[] configLocations = getConfigLocations()：&lt;br&gt;看到这个 getConfigLocations 应该很熟悉了吧，在设置配置文件路径的时候赋的值" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1050" y="1230" width="290" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=11;fontColor=#FF0000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-85" target="-McDBByZdcgpEU9wJOO_-91">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="-McDBByZdcgpEU9wJOO_-92" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;String -&amp;gt; Resource[]&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=11;fontColor=#FF0000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-85" target="-McDBByZdcgpEU9wJOO_-91">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1339.0000000000005" y="1329.62" as="sourcePoint" />
+            <mxPoint x="-1550.0000000000005" y="1329.6969230769228" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-85" value="loadBeanDefinitions(String... locations)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;重载&amp;nbsp;loadBeanDefinitions(location)-&amp;gt;&amp;nbsp;loadBeanDefinitions(location, null)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1370" y="1300" width="430" height="60" as="geometry" />
@@ -257,11 +260,29 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=11;fontColor=#FFFF00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-91" target="-McDBByZdcgpEU9wJOO_-93">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-91" value="loadBeanDefinitions(String location, @Nullable Set&amp;lt;Resource&amp;gt; actualResources)&lt;br&gt;&lt;ol&gt;&lt;li&gt;在最开始的 supper 中完成了父类&amp;nbsp;ResourcePatternResolver 变量&amp;nbsp;this.resourceLoader = resourceLoader(AbstractApplicationContext) 赋值&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;Resource[] resources = ((ResourcePatternResolver) resourceLoader).getResources(location)&amp;nbsp;获取具体资源解析器的定位 ResourcePatternResolver 有多个实现&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2360" y="1222.5" width="900" height="87.5" as="geometry" />
+        <mxCell id="-McDBByZdcgpEU9wJOO_-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=11;fontColor=#00CCCC;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-91" target="-McDBByZdcgpEU9wJOO_-97">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-93" value="" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2570" y="1236.25" width="120" height="60" as="geometry" />
+        <mxCell id="-McDBByZdcgpEU9wJOO_-91" value="loadBeanDefinitions(String location, @Nullable Set&amp;lt;Resource&amp;gt; actualResources)&lt;br&gt;&lt;ol&gt;&lt;li&gt;在最开始的 supper 中完成了父类&amp;nbsp;ResourcePatternResolver 变量&amp;nbsp;this.resourceLoader = resourceLoader(AbstractApplicationContext) 赋值&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;Resource[] resources = ((ResourcePatternResolver) resourceLoader).getResources(location)&amp;nbsp;获取具体资源解析器的定位 ResourcePatternResolver 有多个实现&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#00cccc&quot;&gt;重载 loadBeanDefinitions(resources)&amp;nbsp;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2420" y="1286.25" width="900" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-93" value="getResources(String locationPattern)&lt;br&gt;&lt;ol&gt;&lt;li&gt;String CLASSPATH_ALL_URL_PREFIX = &quot;classpath*:&quot;&amp;nbsp; 资源文件属性是否以 classpath* 开始&lt;br&gt;&lt;/li&gt;&lt;li&gt;或者以 war: 开始&lt;/li&gt;&lt;li&gt;都不是将 location 封装成一个 Resource[] 对象&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-3030" y="1290" width="560" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=11;fontColor=#00CCCC;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-97" target="-McDBByZdcgpEU9wJOO_-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-97" value="loadBeanDefinitions(Resource... resources)&lt;br&gt;&lt;ol&gt;&lt;li&gt;for 循环处理 resources&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2090" y="1410" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=11;fontColor=#FF0000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-99" target="-McDBByZdcgpEU9wJOO_-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-99" value="loadBeanDefinitions(Resource resource)&lt;br&gt;&lt;ol&gt;&lt;li&gt;将 resource 封装为 encodedResource，该类实现了 InputStreamSource 并设置解析编码格式，这里什么都没有做，传的都是 null&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;继续重载调用&amp;nbsp;loadBeanDefinitions(EncodedResource encodedResource)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2336.87" y="1500" width="733.75" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-101" value="" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2894" y="1510" width="500" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
