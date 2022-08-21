@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-21T14:42:11.052Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="ldVFDwFQjoEUnvZeUynJ" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-21T15:17:27.690Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="FyUP1uV9QOB-xB1Yi30D" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="4039" dy="1589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4939" dy="2057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -211,7 +211,7 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=18;fontColor=#00CCCC;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-67" target="-McDBByZdcgpEU9wJOO_-73">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-67" value="DelegatingEntityResolver&lt;br&gt;static final String DTD_SUFFIX = &quot;.dtd&quot;;&lt;br&gt;static final String XSD_SUFFIX = &quot;.xsd&quot;;&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;this.dtdResolver = new BeansDtdResolver();&amp;nbsp; &amp;nbsp;创建 DTD 解析器&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#00cccc&quot;&gt;new PluggableSchemaResolver(classLoader) XSD 解析器 -&amp;gt; &quot;META-INF/spring.schemas&quot;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="-McDBByZdcgpEU9wJOO_-67" value="DelegatingEntityResolver&lt;br&gt;static final String DTD_SUFFIX = &quot;.dtd&quot;;&lt;br&gt;static final String XSD_SUFFIX = &quot;.xsd&quot;;&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;this.dtdResolver = new BeansDtdResolver();&amp;nbsp; &amp;nbsp;创建 DTD 解析器&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#00cccc&quot;&gt;new PluggableSchemaResolver(classLoader) XSD 解析器 -&amp;gt; &quot;META-INF/spring.schemas&quot;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1460" y="1040" width="580" height="100" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-69" value="BeansDtdResolver&lt;br&gt;&lt;ol&gt;&lt;li&gt;static final String DTD_EXTENSION = &quot;.dtd&quot;;&lt;br&gt;&lt;/li&gt;&lt;li&gt;static final String DTD_NAME = &quot;spring-beans&quot;;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
@@ -254,8 +254,14 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-85" value="loadBeanDefinitions(String... locations)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;重载&amp;nbsp;loadBeanDefinitions(location)-&amp;gt;&amp;nbsp;loadBeanDefinitions(location, null)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1370" y="1300" width="430" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-91" value="loadBeanDefinitions(String location, @Nullable Set&amp;lt;Resource&amp;gt; actualResources)&lt;br&gt;&lt;ol&gt;&lt;li&gt;在最开始的 supper 中完成了父类&amp;nbsp;ResourcePatternResolver 变量&amp;nbsp;this.resourceLoader = resourceLoader(AbstractApplicationContext) 赋值&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2200" y="1300" width="781" height="60" as="geometry" />
+        <mxCell id="-McDBByZdcgpEU9wJOO_-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=11;fontColor=#FFFF00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-91" target="-McDBByZdcgpEU9wJOO_-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-91" value="loadBeanDefinitions(String location, @Nullable Set&amp;lt;Resource&amp;gt; actualResources)&lt;br&gt;&lt;ol&gt;&lt;li&gt;在最开始的 supper 中完成了父类&amp;nbsp;ResourcePatternResolver 变量&amp;nbsp;this.resourceLoader = resourceLoader(AbstractApplicationContext) 赋值&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;Resource[] resources = ((ResourcePatternResolver) resourceLoader).getResources(location)&amp;nbsp;获取具体资源解析器的定位 ResourcePatternResolver 有多个实现&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2360" y="1222.5" width="900" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-93" value="" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2570" y="1236.25" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
