@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-21T16:04:19.023Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="gFcpTLGta6SAr_D_yQ3W" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-21T16:13:57.148Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="Drps6fHOYcHIMvjj3zSC" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="4939" dy="2057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5766" dy="2057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -278,11 +278,27 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-102" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=11;fontColor=#FF0000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-99" target="-McDBByZdcgpEU9wJOO_-101">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-103" value="&lt;span style=&quot;font-family: Helvetica; font-size: 12px; text-align: left; background-color: rgb(248, 249, 250);&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Verdana;fontColor=#000000;" vertex="1" connectable="0" parent="-McDBByZdcgpEU9wJOO_-102">
+          <mxGeometry x="0.3588" relative="1" as="geometry">
+            <mxPoint x="15" y="120" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-105" value="Resource -&amp;gt; EncodeResource" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontFamily=Verdana;fontColor=#000000;" vertex="1" connectable="0" parent="-McDBByZdcgpEU9wJOO_-102">
+          <mxGeometry x="-0.0664" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-99" value="loadBeanDefinitions(Resource resource)&lt;br&gt;&lt;ol&gt;&lt;li&gt;将 resource 封装为 encodedResource，该类实现了 InputStreamSource 并设置解析编码格式，这里什么都没有做，传的都是 null&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;继续重载调用&amp;nbsp;loadBeanDefinitions(EncodedResource encodedResource)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-2336.87" y="1500" width="733.75" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-101" value="" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2894" y="1510" width="500" height="60" as="geometry" />
+        <mxCell id="-McDBByZdcgpEU9wJOO_-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=11;fontColor=#FFFF00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-101" target="-McDBByZdcgpEU9wJOO_-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-101" value="loadBeanDefinitions(EncodedResource encodedResource)&lt;br&gt;&lt;ol&gt;&lt;li&gt;Set&amp;lt;EncodedResource&amp;gt; currentResources = this.resourcesCurrentlyBeingLoaded.get() 获取已经加载的 encodedResource&lt;br&gt;&lt;/li&gt;&lt;li&gt;将 encodedResource 转换为输入流&amp;nbsp;InputStream inputStream = encodedResource.getResource().getInputStream()，使用InputSource 封装&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;调用&amp;nbsp;doLoadBeanDefinitions(inputSource, encodedResource.getResource())&amp;nbsp;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-3360" y="1495" width="806" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-106" value="doLoadBeanDefinitions(InputSource inputSource, Resource resource)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-3322" y="1620" width="730" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
