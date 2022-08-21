@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-21T08:55:13.950Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="yQ7l3ZliUWzT2jkv2OFw" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-21T09:26:30.152Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="lWYYm05O--BNFecW_nQ4" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="3270" dy="463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3798" dy="287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -163,17 +163,25 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=14;fontColor=#FF0000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-61" target="-McDBByZdcgpEU9wJOO_-65">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-61" value="&lt;font color=&quot;#ea6b66&quot;&gt;loadBeanDefinitions(beanFactory)：加载 XML(一系列的重载调用) 读取 bean 信息并解析&lt;/font&gt;&lt;br&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#e06d0d&quot;&gt;&lt;font style=&quot;&quot;&gt;使用适配器模式将 beanFactory 转为转&amp;nbsp;&lt;/font&gt;XmlBeanDefinitionReader XML 解析器&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;设置 XML 解析器需要的运行环境&lt;/li&gt;&lt;li style=&quot;&quot;&gt;设置资源加载器&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;设置用于解析 SAX 实体解析器，默认使用&amp;nbsp;ResourceEntityResolver 解析器。可以自定义实体解析覆盖，例如相对于某些特定的基本路径&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;初始化解析器属性&lt;/li&gt;&lt;li style=&quot;&quot;&gt;重载&amp;nbsp;loadBeanDefinitions(beanDefinitionReader);&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="29.690000000000005" y="970" width="768.62" height="150" as="geometry" />
+        <mxCell id="-McDBByZdcgpEU9wJOO_-76" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=18;fontColor=#00CCCC;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-61" target="-McDBByZdcgpEU9wJOO_-75">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="1045" />
+              <mxPoint x="-10" y="1170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-61" value="&lt;font color=&quot;#ea6b66&quot;&gt;loadBeanDefinitions(beanFactory)：加载 XML(一系列的重载调用) 读取 bean 信息并解析&lt;/font&gt;&lt;br&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#e06d0d&quot;&gt;&lt;font style=&quot;&quot;&gt;使用适配器模式将 beanFactory 转为转&amp;nbsp;&lt;/font&gt;XmlBeanDefinitionReader XML 解析器&amp;nbsp;XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanFactory);&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;设置 XML 解析器需要的运行环境&amp;nbsp;beanDefinitionReader.setEnvironment(this.getEnvironment());&lt;/li&gt;&lt;li style=&quot;&quot;&gt;设置资源加载器&amp;nbsp;beanDefinitionReader.setResourceLoader(this);&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;设置用于解析 SAX 实体解析器，默认使用&amp;nbsp;ResourceEntityResolver 解析器。可以自定义实体解析覆盖，例如相对于某些特定的基本路径&amp;nbsp;beanDefinitionReader.setEntityResolver(new ResourceEntityResolver(this));&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#00cccc&quot;&gt;初始化解析器属性：initBeanDefinitionReader(beanDefinitionReader);&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;重载&amp;nbsp;loadBeanDefinitions(beanDefinitionReader);&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-174.08" y="980" width="1176.15" height="150" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-63" value="创建&amp;nbsp;XmlBeanDefinitionReader 对象&lt;br&gt;&lt;ol&gt;&lt;li&gt;static final int VALIDATION_NONE = XmlValidationModeDetector.VALIDATION_NONE -&amp;gt; 0;&amp;nbsp; 禁用验证&lt;br&gt;&lt;/li&gt;&lt;li&gt;static final int VALIDATION_AUTO = XmlValidationModeDetector.VALIDATION_AUTO; -&amp;gt; 1 表示应自动检测验证模式。&lt;br&gt;&lt;/li&gt;&lt;li&gt;static final int VALIDATION_DTD = XmlValidationModeDetector.VALIDATION_DTD; -&amp;gt; 2 表示 DTD 格式&lt;br&gt;&lt;/li&gt;&lt;li&gt;static final int VALIDATION_XSD = XmlValidationModeDetector.VALIDATION_XSD; -&amp;gt; 3 表示 XSD 格式&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#E06D0D;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-770" y="920" width="720" height="110" as="geometry" />
+          <mxGeometry x="-990" y="900" width="720" height="110" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-68" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=14;fontColor=#FFFF00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-65" target="-McDBByZdcgpEU9wJOO_-67">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-65" value="ResourceEntityResolver&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;super(resourceLoader.getClassLoader());&amp;nbsp;&amp;nbsp;调用父类方法获取对应的解析器 DTD or XSD&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-580" y="1060" width="530" height="60" as="geometry" />
+          <mxGeometry x="-800" y="1060" width="530" height="60" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-70" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=14;fontColor=#FF0000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-67" target="-McDBByZdcgpEU9wJOO_-69">
           <mxGeometry relative="1" as="geometry" />
@@ -182,13 +190,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-67" value="DelegatingEntityResolver&lt;br&gt;static final String DTD_SUFFIX = &quot;.dtd&quot;;&lt;br&gt;static final String XSD_SUFFIX = &quot;.xsd&quot;;&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;this.dtdResolver = new BeansDtdResolver();&amp;nbsp; &amp;nbsp;创建 DTD 解析器&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#00cccc&quot;&gt;new PluggableSchemaResolver(classLoader) XSD 解析器 -&amp;gt; &quot;META-INF/spring.schemas&quot;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-1210" y="1040" width="580" height="100" as="geometry" />
+          <mxGeometry x="-1460" y="1040" width="580" height="100" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-69" value="BeansDtdResolver&lt;br&gt;&lt;ol&gt;&lt;li&gt;static final String DTD_EXTENSION = &quot;.dtd&quot;;&lt;br&gt;&lt;/li&gt;&lt;li&gt;static final String DTD_NAME = &quot;spring-beans&quot;;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-1580" y="960" width="330" height="70" as="geometry" />
+          <mxGeometry x="-1900" y="940" width="330" height="70" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-73" value="PluggableSchemaResolver XSD 文件路径映射&lt;br&gt;&lt;ol&gt;&lt;li&gt;static final String DEFAULT_SCHEMA_MAPPINGS_LOCATION = &quot;META-INF/spring.schemas&quot;;定义架构映射的文件的位置。可以存在于多个 JAR 文件中&lt;br&gt;&lt;/li&gt;&lt;li&gt;volatile Map&amp;lt;String, String&amp;gt; schemaMappings 资源路径映射&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;注意这里调试的时候&amp;nbsp;schemaMappings 发现被赋值了，这其实是 IDEA 自己调用了&amp;nbsp;PluggableSchemaResolver toString 方法，而 toString 方法中又包含了&amp;nbsp;getSchemaMappings() 导致这个 Map 被赋值。&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2320" y="1080" width="1070" height="110" as="geometry" />
+          <mxGeometry x="-2640" y="1070" width="1070" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-75" value="设置解析方式:&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.validationMode = 1 表示应自动检测验证模式&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-700" y="1140" width="350" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
