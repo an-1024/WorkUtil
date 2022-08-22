@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-22T02:44:57.195Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="xWU6gVutbqvD7rr6che6" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-22T02:46:31.471Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="eWsDm-SvO1a8zz5F4c7d" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="10171" dy="3099" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8289" dy="2077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -258,19 +258,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-99" value="loadBeanDefinitions(Resource resource)&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;将 resource 封装为 encodedResource，该类实现了 InputStreamSource 并设置解析编码格式，这里什么都没有做，传的都是 null&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 18px;&quot;&gt;继续重载调用&amp;nbsp;loadBeanDefinitions(EncodedResource encodedResource)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-3570" y="900" width="1080" height="120" as="geometry" />
+          <mxGeometry x="-3580" y="910" width="1080" height="120" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-107" value="&lt;font color=&quot;#000000&quot; style=&quot;font-size: 18px;&quot;&gt;inputSource -&amp;gt; Document&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=18;fontColor=#FFFF00;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-101" target="-McDBByZdcgpEU9wJOO_-106" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-101" value="loadBeanDefinitions(EncodedResource encodedResource)&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;Set&amp;lt;EncodedResource&amp;gt; currentResources = this.resourcesCurrentlyBeingLoaded.get() 获取已经加载的 encodedResource&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;将 encodedResource 转换为输入流&amp;nbsp;InputStream inputStream = encodedResource.getResource().getInputStream()，使用InputSource 封装&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ffff00&quot; style=&quot;font-size: 18px;&quot;&gt;调用&amp;nbsp;doLoadBeanDefinitions(inputSource, encodedResource.getResource())&amp;nbsp;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-3635" y="1172.5" width="1210" height="140" as="geometry" />
+          <mxGeometry x="-3650" y="1172.5" width="1210" height="140" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-110" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=18;fontColor=#00CCCC;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-106" target="-McDBByZdcgpEU9wJOO_-109" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-106" value="doLoadBeanDefinitions(InputSource inputSource, Resource resource)&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#00cccc&quot; style=&quot;font-size: 18px;&quot;&gt;解析配置文件内容，将其属性节点内容放入 Document 对象中&amp;nbsp;Document doc = doLoadDocument(inputSource, resource)&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#00cccc&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-3395" y="1450" width="730" height="160" as="geometry" />
+          <mxGeometry x="-3557.5" y="1450" width="1025" height="160" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=18;fontColor=#FF0000;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-109" target="-McDBByZdcgpEU9wJOO_-111" edge="1">
           <mxGeometry relative="1" as="geometry" />
