@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-22T15:51:02.007Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="9f4-3IdRs6wxCxFZKgzV" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-22T15:59:31.143Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="T3UfCbYay9F7rojFXSu-" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="8239" dy="2109" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="7982" dy="1961" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -359,11 +359,11 @@
         <mxCell id="vvphals0SzpIUJqCIcSN-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#80FF00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vvphals0SzpIUJqCIcSN-0" target="vvphals0SzpIUJqCIcSN-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vvphals0SzpIUJqCIcSN-0" value="registerBeanDefinition(String beanName, BeanDefinition beanDefinition)&lt;br&gt;&lt;ol&gt;&lt;li&gt;获取 bean 名称&amp;nbsp;BeanDefinition existingDefinition = this.beanDefinitionMap.get(beanName)&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;registry.registerBeanDefinition(beanName, definitionHolder.getBeanDefinition()) 注册bean&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;遍历注册 beanDefinition 的别名&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#80FF00;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="904.75" y="2160" width="1022.5" height="130" as="geometry" />
+        <mxCell id="vvphals0SzpIUJqCIcSN-0" value="registerBeanDefinition(String beanName, BeanDefinition beanDefinition)&lt;br&gt;&lt;ol&gt;&lt;li&gt;获取 bean 名称&amp;nbsp;BeanDefinition existingDefinition = this.beanDefinitionMap.get(beanName)&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;registry.registerBeanDefinition(beanName, definitionHolder.getBeanDefinition()) 注册bean&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;遍历注册 beanDefinition 的别名，其大致流程与注册 beanDefinition 相似，最后将别名放入&amp;nbsp;this.aliasMap.put(alias, name) 集合中&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#80FF00;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="903.75" y="2160" width="1022.5" height="150" as="geometry" />
         </mxCell>
         <mxCell id="vvphals0SzpIUJqCIcSN-2" value="&lt;div&gt;registerBeanDefinition(String beanName, BeanDefinition beanDefinition)：&lt;br&gt;&lt;/div&gt;&lt;ol&gt;&lt;li&gt;判断该 bean 是否已经创建，如果已经创建，判断是否允许被覆盖&amp;nbsp;isAllowBeanDefinitionOverriding() ，不允许抛出异常，允许的话继续执行，后续是一系列的判断然后输出日志，最后将 beanDefinition 放入&amp;nbsp;beanDefinitionMap；&lt;/li&gt;&lt;li&gt;如果没有创建，判断这个工厂的 bean 创建阶段是否已经开始，如果开始则需要将此时的 beanDefinition 放入，移除旧的名称集&lt;/li&gt;&lt;li&gt;如果这个工程的 bean 的创建工程没有开始，则将 beanName -&amp;gt; beanDefinition 放入 beanDefinitionMap，名称 beanName放入&amp;nbsp;beanDefinitionNames 集合中，此时就已经将 beanDefinition 注册成功了&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FF3333;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="898" y="2338" width="1034" height="190" as="geometry" />
+          <mxGeometry x="898" y="2350" width="1034" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
