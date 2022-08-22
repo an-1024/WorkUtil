@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-22T10:03:49.109Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="nhdulX9yc6EOlhfaAXzT" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-22T10:33:25.904Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="DU-LeRRP3rbHhWyeEZ-p" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="8394" dy="2134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -332,8 +332,8 @@
         <mxCell id="swjzN8IUrycUAb-GRa1w-31" value="parseBeanDefinitions(Element root, BeanDefinitionParserDelegate delegate)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffffff&quot;&gt;判断标签是否是默认的命名空间，且元素是否是 Element 类，全都符合再次判断是不是标准定义的标签，是的话就按照标准定义进行解析&amp;nbsp;parseDefaultElement(ele, delegate)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;不是则按照自定义标签进行解析&amp;nbsp;delegate.parseCustomElement(ele)&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FF00FF;strokeColor=#FF00FF;rounded=0;fontColor=#000000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1360" y="1920" width="1480" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="swjzN8IUrycUAb-GRa1w-33" value="parseDefaultElement(Element ele, BeanDefinitionParserDelegate delegate)&lt;br&gt;&lt;ol&gt;&lt;li&gt;判断是否是 import 标签：importBeanDefinitionResource(ele)&lt;/li&gt;&lt;li&gt;判断是否是alias 标签：processAliasRegistration(ele)&lt;/li&gt;&lt;li&gt;判断是否是 bean&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="200" y="1880" width="625" height="190" as="geometry" />
+        <mxCell id="swjzN8IUrycUAb-GRa1w-33" value="parseDefaultElement(Element ele, BeanDefinitionParserDelegate delegate)&lt;br&gt;&lt;ol&gt;&lt;li&gt;判断是否是 import 标签：importBeanDefinitionResource(ele)&lt;/li&gt;&lt;li&gt;判断是否是alias 标签：processAliasRegistration(ele)&lt;/li&gt;&lt;li&gt;判断是否是 bean 标签：processBeanDefinition(ele, delegate)&lt;/li&gt;&lt;li&gt;判断是否是&amp;nbsp;beans 标签：doRegisterBeanDefinitions(ele)&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="190" y="1902.5" width="625" height="145" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
