@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-22T16:06:14.265Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="qdrTLrqk8ijpcQZpm0dS" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-22T16:19:20.353Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="soRUh2q-4IigXWzcMEfn" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="8779" dy="2422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8613" dy="2326" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -120,7 +120,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-37" value="obtainFreshBeanFactory&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#e06d0d&quot; style=&quot;font-size: 18px;&quot;&gt;refreshBeanFactory(); 针对 beanFactory的一系例操作&lt;/font&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;getBeanFactory 获取创建成功的 BeanFactory&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-315" y="-35" width="630" height="115" as="geometry" />
+          <mxGeometry x="-310" y="-35" width="630" height="115" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Verdana;fontSize=18;fontColor=#FFFF00;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-43" target="-McDBByZdcgpEU9wJOO_-47" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -153,7 +153,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-56" value="customizeBeanFactory 看到这个有没有觉得熟悉：类似前面提到系统环境属性的扩展点: 定义&amp;nbsp; beanFactory 的 bean 的属性：&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;allowBeanDefinitionOverriding&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;allowCircularReferences&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-502" y="170" width="1004" height="130" as="geometry" />
+          <mxGeometry x="-497" y="168.75" width="1004" height="130" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-61" target="-McDBByZdcgpEU9wJOO_-75" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -168,7 +168,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-61" value="&lt;font color=&quot;#ea6b66&quot; style=&quot;font-size: 18px;&quot;&gt;loadBeanDefinitions(beanFactory)：加载 XML(一系列的重载调用) 读取 bean 信息并解析&lt;/font&gt;&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#cc6600&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;使用适配器模式将 beanFactory 转为转&amp;nbsp;&lt;/font&gt;XmlBeanDefinitionReader XML 解析器&amp;nbsp;XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanFactory);&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;设置 XML 解析器需要的运行环境&amp;nbsp;beanDefinitionReader.setEnvironment(this.getEnvironment());&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;设置资源加载器&amp;nbsp;beanDefinitionReader.setResourceLoader(this);&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 18px;&quot;&gt;设置用于解析 SAX 实体解析器，默认使用&amp;nbsp;ResourceEntityResolver 解析器。可以自定义实体解析覆盖，例如相对于某些特定的基本路径&amp;nbsp;beanDefinitionReader.setEntityResolver(new ResourceEntityResolver(this));&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#00cccc&quot; style=&quot;font-size: 18px;&quot;&gt;初始化解析器属性：initBeanDefinitionReader(beanDefinitionReader);&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ffff00&quot; style=&quot;font-size: 18px;&quot;&gt;重载&amp;nbsp;loadBeanDefinitions(beanDefinitionReader);&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-754.0400000000001" y="440" width="1508.08" height="230" as="geometry" />
+          <mxGeometry x="-749.0400000000001" y="440" width="1508.08" height="230" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;fontColor=#CC6600;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-63" target="swjzN8IUrycUAb-GRa1w-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
