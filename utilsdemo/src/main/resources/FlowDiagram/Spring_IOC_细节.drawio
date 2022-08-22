@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-22T15:59:31.143Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="T3UfCbYay9F7rojFXSu-" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-22T16:06:14.265Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="qdrTLrqk8ijpcQZpm0dS" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="7982" dy="1961" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8779" dy="2422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -321,31 +321,34 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-24" value="&lt;div&gt;BeanDefinitionParserDelegate createDelegate(&lt;span style=&quot;background-color: initial;&quot;&gt;XmlReaderContext readerContext, Element root, @Nullable BeanDefinitionParserDelegate parentDelegate)：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;BeanDefinitionParserDelegate delegate = new BeanDefinitionParserDelegate(readerContext) 这个类中定义了许多标签属性&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#ffff00&quot;&gt;initDefaults(Element root, @Nullable BeanDefinitionParserDelegate parent) 初始化默认的lazy-init、autowire、依赖检查设置、init-method、destroy-method和merge设置。如果默认值未在本地显式设置，则通过回退到给定的父级来支持嵌套的“bean”元素用例。&lt;/font&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-1360" y="1655" width="1270" height="190" as="geometry" />
+          <mxGeometry x="-1360" y="1540" width="1270" height="190" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-28" value="initDefaults(Element root, @Nullable BeanDefinitionParserDelegate parent)：&lt;br&gt;&lt;ol&gt;&lt;li&gt;populateDefaults(this.defaults, (parent != null ? parent.defaults : null), root) 使用默认的惰性初始化、自动装配、依赖性检查设置、初始化方法、销毁方法和合并设置填充给定的 DocumentDefaultsDefinition 实例&lt;br&gt;&lt;/li&gt;&lt;li&gt;fireDefaultsRegistered(DefaultsDefinition defaultsDefinition)&amp;nbsp;触发默认注册事件&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-40" y="1682.5" width="886.54" height="135" as="geometry" />
+          <mxGeometry x="-40" y="1567.5" width="886.54" height="135" as="geometry" />
         </mxCell>
-        <mxCell id="swjzN8IUrycUAb-GRa1w-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;fontColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="swjzN8IUrycUAb-GRa1w-31" target="swjzN8IUrycUAb-GRa1w-33" edge="1">
+        <mxCell id="swjzN8IUrycUAb-GRa1w-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;fontColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="swjzN8IUrycUAb-GRa1w-31" target="swjzN8IUrycUAb-GRa1w-33" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="swjzN8IUrycUAb-GRa1w-31" value="parseBeanDefinitions(Element root, BeanDefinitionParserDelegate delegate)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffffff&quot;&gt;判断标签是否是默认的命名空间，且元素是否是 Element 类，全都符合再次判断是不是标准定义的标签，是的话就按照标准定义进行解析&amp;nbsp;parseDefaultElement(ele, delegate)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;不是则按照自定义标签进行解析&amp;nbsp;delegate.parseCustomElement(ele)&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FF00FF;strokeColor=#FF00FF;rounded=0;fontColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-1360" y="1920" width="1480" height="110" as="geometry" />
+        <mxCell id="vvphals0SzpIUJqCIcSN-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFF00;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="swjzN8IUrycUAb-GRa1w-31" target="vvphals0SzpIUJqCIcSN-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="swjzN8IUrycUAb-GRa1w-31" value="parseBeanDefinitions(Element root, BeanDefinitionParserDelegate delegate)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffffff&quot;&gt;判断标签是否是默认的命名空间，且元素是否是 Element 类，全都符合再次判断是不是标准定义的标签，是的话就按照标准定义进行解析&amp;nbsp;parseDefaultElement(ele, delegate)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;不是则按照自定义标签进行解析&amp;nbsp;delegate.parseCustomElement(ele)&amp;nbsp;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FF00FF;strokeColor=#FF00FF;rounded=0;fontColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-1360" y="1990" width="1480" height="110" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;fontColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="swjzN8IUrycUAb-GRa1w-33" target="swjzN8IUrycUAb-GRa1w-44" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-33" value="parseDefaultElement(Element ele, BeanDefinitionParserDelegate delegate)&lt;br&gt;&lt;ol&gt;&lt;li&gt;判断是否是 import 标签：importBeanDefinitionResource(ele)&lt;/li&gt;&lt;li&gt;判断是否是alias 标签：processAliasRegistration(ele)&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0000ff&quot;&gt;判断是否是 bean 标签：processBeanDefinition(ele, delegate)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;判断是否是&amp;nbsp;beans 标签：doRegisterBeanDefinitions(ele)&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="190" y="1902.5" width="625" height="145" as="geometry" />
+          <mxGeometry x="190" y="1775" width="625" height="145" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;fontColor=#FF3333;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="swjzN8IUrycUAb-GRa1w-36" target="swjzN8IUrycUAb-GRa1w-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-36" value="&lt;font color=&quot;#ffffff&quot;&gt;parseBeanDefinitionElement(Element ele)：&lt;/font&gt;&lt;br&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(255, 255, 255);&quot;&gt;获取 bean 的 id 属性；&lt;/li&gt;&lt;li style=&quot;color: rgb(255, 255, 255);&quot;&gt;获取 bean 的 name 属性&lt;/li&gt;&lt;li style=&quot;color: rgb(255, 255, 255);&quot;&gt;校验 bean 的 name 是否唯一&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#ffff00&quot;&gt;parseBeanDefinitionElement(ele, beanName, containingBean) 对 bean 元素进行详细解析：比如 bean 类是一个接口、抽象类等等&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FF3333;strokeColor=#000000;fontColor=#000000;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="2130" y="1839.3800000000003" width="700" height="271.25" as="geometry" />
+          <mxGeometry x="2320" y="1711.8700000000003" width="700" height="271.25" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-40" value="&lt;div&gt;parseBeanDefinitionElement(&lt;span style=&quot;background-color: initial;&quot;&gt;Element ele, String beanName, @Nullable BeanDefinition containingBean)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;获取 class 属性&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;className = ele.getAttribute(CLASS_ATTRIBUTE).trim()&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;获取 parent 属性&amp;nbsp;parent = ele.getAttribute(PARENT_ATTRIBUTE)&lt;/li&gt;&lt;li&gt;AbstractBeanDefinition bd = createBeanDefinition(className, parent);&amp;nbsp;&amp;nbsp;为给定的类名和父名创建一个 bean 定义 实际操作类是 GenericBeanDefinition，其实此时已经满足实例化 BeanDefinition 了。创建了GenericBeanDefinition 对象&lt;br&gt;&lt;/li&gt;&lt;li&gt;接着是对标签元素的一系列解析，以及对 GenericBeanDefinition&amp;nbsp;实现了 BeanDefinition 接口 的属性填充：比如构造函数解析、子类方法解析等&lt;/li&gt;&lt;li&gt;得到完整的 beanDeinitions 后，返回一个&amp;nbsp;new BeanDefinitionHolder(beanDefinition, beanName, aliasesArray)，该类是对 BeanDefinition 的封装。&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="2050" y="1430" width="860" height="287.51" as="geometry" />
+          <mxGeometry x="2240" y="1350" width="860" height="287.51" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;fontColor=#FF0000;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="swjzN8IUrycUAb-GRa1w-44" target="swjzN8IUrycUAb-GRa1w-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -354,16 +357,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-44" value="&lt;font color=&quot;#ffffff&quot;&gt;processBeanDefinition(Element ele, BeanDefinitionParserDelegate delegate)：&lt;/font&gt;&lt;br&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;解析标签元素得到&amp;nbsp;BeanDefinitionHolder -&amp;gt;delegate.parseBeanDefinitionElement(ele)&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#80ff00&quot;&gt;向 IOC 容器注册解析得到 beanDefinition 的地方&amp;nbsp;BeanDefinitionReaderUtils.registerBeanDefinition(bdHolder, getReaderContext().getRegistry())&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#3333FF;strokeColor=#000000;fontColor=#000000;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="900" y="1839.38" width="1030" height="271.25" as="geometry" />
+          <mxGeometry x="1030" y="1711.8700000000001" width="1030" height="271.25" as="geometry" />
         </mxCell>
         <mxCell id="vvphals0SzpIUJqCIcSN-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#80FF00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vvphals0SzpIUJqCIcSN-0" target="vvphals0SzpIUJqCIcSN-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vvphals0SzpIUJqCIcSN-0" value="registerBeanDefinition(String beanName, BeanDefinition beanDefinition)&lt;br&gt;&lt;ol&gt;&lt;li&gt;获取 bean 名称&amp;nbsp;BeanDefinition existingDefinition = this.beanDefinitionMap.get(beanName)&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;registry.registerBeanDefinition(beanName, definitionHolder.getBeanDefinition()) 注册bean&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;遍历注册 beanDefinition 的别名，其大致流程与注册 beanDefinition 相似，最后将别名放入&amp;nbsp;this.aliasMap.put(alias, name) 集合中&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#80FF00;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="903.75" y="2160" width="1022.5" height="150" as="geometry" />
+          <mxGeometry x="1033.75" y="1440" width="1022.5" height="150" as="geometry" />
         </mxCell>
         <mxCell id="vvphals0SzpIUJqCIcSN-2" value="&lt;div&gt;registerBeanDefinition(String beanName, BeanDefinition beanDefinition)：&lt;br&gt;&lt;/div&gt;&lt;ol&gt;&lt;li&gt;判断该 bean 是否已经创建，如果已经创建，判断是否允许被覆盖&amp;nbsp;isAllowBeanDefinitionOverriding() ，不允许抛出异常，允许的话继续执行，后续是一系列的判断然后输出日志，最后将 beanDefinition 放入&amp;nbsp;beanDefinitionMap；&lt;/li&gt;&lt;li&gt;如果没有创建，判断这个工厂的 bean 创建阶段是否已经开始，如果开始则需要将此时的 beanDefinition 放入，移除旧的名称集&lt;/li&gt;&lt;li&gt;如果这个工程的 bean 的创建工程没有开始，则将 beanName -&amp;gt; beanDefinition 放入 beanDefinitionMap，名称 beanName放入&amp;nbsp;beanDefinitionNames 集合中，此时就已经将 beanDefinition 注册成功了&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FF3333;strokeColor=#000000;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="898" y="2350" width="1034" height="190" as="geometry" />
+          <mxGeometry x="1026" y="1147.5" width="1034" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="vvphals0SzpIUJqCIcSN-4" value="" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="190" y="2170" width="520" height="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
