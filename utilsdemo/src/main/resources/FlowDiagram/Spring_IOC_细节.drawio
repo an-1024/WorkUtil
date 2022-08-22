@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-22T08:31:14.805Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="MFt0zYaSNc26lMuo4HBW" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-22T08:44:15.791Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="CQxCg8GQ3aBceCF9tuvN" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="7970" dy="1904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="12304" dy="4257" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -302,14 +302,20 @@
         <mxCell id="swjzN8IUrycUAb-GRa1w-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;fontColor=#FFFF33;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="swjzN8IUrycUAb-GRa1w-15" target="swjzN8IUrycUAb-GRa1w-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="swjzN8IUrycUAb-GRa1w-15" value="registerBeanDefinitions(Document doc, Resource resource)&lt;br&gt;&lt;ol&gt;&lt;li&gt;创建&amp;nbsp;BeanDefinitionDocumentReader 对象&lt;/li&gt;&lt;li&gt;记录未填充前 beanDefinitionMap 集合的大小&amp;nbsp;&amp;nbsp;int countBefore = getRegistry().getBeanDefinitionCount()&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff33&quot;&gt;调用&amp;nbsp;documentReader.registerBeanDefinitions(doc, createReaderContext(resource)) 创建并填充 BeanDefinition 对象&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;fontSize=18;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="swjzN8IUrycUAb-GRa1w-15" value="registerBeanDefinitions(Document doc, Resource resource)&lt;br&gt;&lt;ol&gt;&lt;li&gt;创建&amp;nbsp;BeanDefinitionDocumentReader 对象&lt;/li&gt;&lt;li&gt;记录未填充前 beanDefinitionMap 集合的大小&amp;nbsp;&amp;nbsp;int countBefore = getRegistry().getBeanDefinitionCount()&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff33&quot;&gt;调用&amp;nbsp;documentReader.registerBeanDefinitions(doc, createReaderContext(resource)) 创建并填充 BeanDefinition 对象; createReaderContext(resource) 创建了一个&amp;nbsp;XmlReaderContext&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;fontSize=18;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-2420" y="1461.25" width="990" height="137.5" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-17" value="AbstractBeanDefinitionReader&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.registry = registry =&amp;nbsp;DefaultListableBeanFactory&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#E06D0D;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-2460" y="168.75" width="470" height="107.5" as="geometry" />
         </mxCell>
-        <mxCell id="swjzN8IUrycUAb-GRa1w-20" value="doRegisterBeanDefinitions(Element root)&lt;br&gt;&lt;ol&gt;&lt;li&gt;doRegisterBeanDefinitions(doc.getDocumentElement());&amp;nbsp; doc.getDocumentElement() 获取配置文档的标签属性&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;fontSize=18;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2420" y="1690" width="990" height="90" as="geometry" />
+        <mxCell id="swjzN8IUrycUAb-GRa1w-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;fontColor=#FF0000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="swjzN8IUrycUAb-GRa1w-20" target="swjzN8IUrycUAb-GRa1w-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="swjzN8IUrycUAb-GRa1w-20" value="doRegisterBeanDefinitions(Element root)&lt;br&gt;&lt;ol&gt;&lt;li&gt;doRegisterBeanDefinitions(doc.getDocumentElement());&amp;nbsp; doc.getDocumentElement() 获取配置文档的标签属性&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;创建一个解析器，对应配置文档中的标签属性&amp;nbsp;this.delegate = createDelegate(getReaderContext(), root, parent)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;fontSize=18;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2420" y="1690" width="990" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="swjzN8IUrycUAb-GRa1w-24" value="&lt;div&gt;BeanDefinitionParserDelegate createDelegate(&lt;span style=&quot;background-color: initial;&quot;&gt;XmlReaderContext readerContext, Element root, @Nullable BeanDefinitionParserDelegate parentDelegate)：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;BeanDefinitionParserDelegate delegate = new BeanDefinitionParserDelegate(readerContext)&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;fontSize=18;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1360" y="1655" width="1310" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
