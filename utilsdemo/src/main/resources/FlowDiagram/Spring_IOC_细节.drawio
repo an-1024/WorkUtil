@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-23T14:57:33.193Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="f30HinR2IvRpn3lQ3Y5N" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-23T16:15:54.535Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="x3wCd2BmLzOx-DUKUUep" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="22298" dy="3278" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="25867" dy="5346" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -10,7 +10,7 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Verdana;fontSize=18;fontColor=#FF0000;strokeWidth=5;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vhB5iVHmFAJZdGOzhbKn-0" target="vhB5iVHmFAJZdGOzhbKn-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="vhB5iVHmFAJZdGOzhbKn-0" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Spring IOC 细节-&amp;gt; XML的bean加载&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="vhB5iVHmFAJZdGOzhbKn-0" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Spring IOC 细节-&amp;gt; XML的bean加载&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-363" y="-1239" width="420" height="70" as="geometry" />
         </mxCell>
         <mxCell id="vhB5iVHmFAJZdGOzhbKn-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;strokeWidth=5;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="vhB5iVHmFAJZdGOzhbKn-5" target="vhB5iVHmFAJZdGOzhbKn-8" edge="1">
@@ -447,6 +447,18 @@
         </mxCell>
         <mxCell id="8aI2bJ5IGFcjeBgnvbSx-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=25;strokeWidth=5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-8" target="-McDBByZdcgpEU9wJOO_-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZeKIb3R78Dg6MLLJOp1T-23" value="" style="endArrow=classic;html=1;rounded=0;fontSize=25;fontColor=#000000;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-17640" y="3360" as="sourcePoint" />
+            <mxPoint x="-15650" y="3360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZeKIb3R78Dg6MLLJOp1T-24" value="以下部分是自定义 XML 标签元素的解析过程" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=37;fontColor=#000000;strokeWidth=8;" connectable="0" vertex="1" parent="ZeKIb3R78Dg6MLLJOp1T-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZeKIb3R78Dg6MLLJOp1T-25" value="注意说明：图中每个模块字体颜色的处理逻辑对应与字体颜色相同的模块，模块与模块之间颜色相同表明是程序执行的流程&lt;br style=&quot;font-size: 74px;&quot;&gt;模块下面没有分支表明程序结束。模块方法执行返回值参考源码看" style="text;html=1;strokeColor=#B20000;fillColor=#e51400;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=74;fontColor=#ffffff;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-3350" y="-2050" width="4260" height="448" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
