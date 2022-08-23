@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-23T04:54:38.372Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="fgg6xoO-k6PlYS31aAlz" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-23T05:18:35.567Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="irQzYupPAIOnDnemSo9P" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="8804" dy="2357" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -378,10 +378,34 @@
           <mxGeometry x="1130" y="2158.75" width="410" height="90" as="geometry" />
         </mxCell>
         <mxCell id="TSj2-_jnBFrJ9VK-oBdi-0" value="parseCustomElement(Element ele, @Nullable BeanDefinition containingBd)&lt;br&gt;&lt;ol&gt;&lt;li&gt;获取标签对应的命名空间 比如：context对应 url： http://www.springframework.org/schema/context&lt;/li&gt;&lt;li&gt;获取解析命名空间的处理器&amp;nbsp;NamespaceHandler ：NamespaceHandler handler = this.readerContext.getNamespaceHandlerResolver().resolve(namespaceUri)&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1907.75" y="2158.75" width="1319" height="112.5" as="geometry" />
+          <mxGeometry x="1582.5" y="2147.5" width="1319" height="112.5" as="geometry" />
         </mxCell>
-        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-3" value="XmlReaderContext createReaderContext(Resource resource)&lt;br&gt;&lt;ol&gt;&lt;li&gt;getNamespaceHandlerResolver 如果没有指定，则获取默认的命名空间处理器&amp;nbsp;DefaultNamespaceHandlerResolver，读取默认的 handler 路径：&amp;nbsp;META-INF/spring.handlers&lt;br&gt;&lt;/li&gt;&lt;li&gt;创建一个&amp;nbsp;XmlReaderContext 对象&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#66FFFF;strokeColor=#66FFFF;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-2810" y="1730" width="960" height="140" as="geometry" />
+        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#9933FF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TSj2-_jnBFrJ9VK-oBdi-3" target="TSj2-_jnBFrJ9VK-oBdi-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-3" value="XmlReaderContext createReaderContext(Resource resource)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#9933ff&quot;&gt;getNamespaceHandlerResolver 如果没有指定，则获取默认的命名空间处理器&amp;nbsp;DefaultNamespaceHandlerResolver，读取默认的 handler 路径：&amp;nbsp;META-INF/spring.handlers&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;创建一个&amp;nbsp;XmlReaderContext 对象&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#66FFFF;strokeColor=#66FFFF;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2620" y="1730" width="960" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FFFFFF;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TSj2-_jnBFrJ9VK-oBdi-5" target="TSj2-_jnBFrJ9VK-oBdi-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-5" value="&lt;font color=&quot;#ffffff&quot;&gt;NamespaceHandlerResolver getNamespaceHandlerResolver()：&lt;br&gt;&lt;/font&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffffff&quot;&gt;如果命名处理器为 null 则创建一个默认的&amp;nbsp;this.namespaceHandlerResolver = createDefaultNamespaceHandlerResolver()&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#9933FF;strokeColor=#9933FF;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2670" y="1930" width="1060" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#66FF66;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TSj2-_jnBFrJ9VK-oBdi-7" target="TSj2-_jnBFrJ9VK-oBdi-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-7" value="&lt;font color=&quot;#ffffff&quot;&gt;NamespaceHandlerResolver createDefaultNamespaceHandlerResolver()&lt;/font&gt;&lt;br&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(255, 255, 255);&quot;&gt;如果资源处理器不为 null，则取资源类加载器&amp;nbsp; getResourceLoader().getClassLoader()，否则获取 beanClassLoader bean 加载器；&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#66ff66&quot;&gt;创建&amp;nbsp;new DefaultNamespaceHandlerResolver(cl) 对象&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#9933FF;strokeColor=#9933FF;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2550" y="2098.75" width="820" height="101.25" as="geometry" />
+        </mxCell>
+        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#66FF66;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="TSj2-_jnBFrJ9VK-oBdi-9" target="TSj2-_jnBFrJ9VK-oBdi-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-9" value="DefaultNamespaceHandlerResolver(@Nullable ClassLoader classLoader)&lt;br&gt;&lt;ol&gt;&lt;li&gt;this(classLoader, DEFAULT_HANDLER_MAPPINGS_LOCATION) 使用默认的映射文件&amp;nbsp;spring.handlers 创建新的命名空间处理器&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#66FF66;strokeColor=#66FF66;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2677.5" y="2280" width="1075" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TSj2-_jnBFrJ9VK-oBdi-11" value="DefaultNamespaceHandlerResolver(@Nullable ClassLoader classLoader, String handlerMappingsLocation)&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.handlerMappingsLocation = handlerMappingsLocation 命名空间处理器映射文件位置&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.classLoader = (classLoader != null ? classLoader : ClassUtils.getDefaultClassLoader())&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#66FF66;strokeColor=#66FF66;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-2590" y="2420" width="900" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
