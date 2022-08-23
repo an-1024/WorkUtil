@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-23T09:17:52.479Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="fjZD3YwOwTlV1G925fGG" version="20.2.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-23T09:25:13.913Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="gZjYQEZz_hEuJgL1eWjF" version="20.2.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="8647" dy="2272" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -420,7 +420,7 @@
           <mxGeometry x="1722.5" y="2310" width="1039" height="120" as="geometry" />
         </mxCell>
         <mxCell id="5atNqO5YCdcayf-Q1qNk-3" value="NamespaceHandler resolve(String namespaceUri)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;Map&amp;lt;String, Object&amp;gt; handlerMappings = getHandlerMappings()&amp;nbsp;延迟加载指定的 NamespaceHandler 映射&lt;/font&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;实例化命名空间处理器 NamespaceHandler namespaceHandler = (NamespaceHandler) BeanUtils.instantiateClass(handlerClass);&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;初始化自定义元素 namespaceHandler.init();&lt;/li&gt;&lt;li&gt;将得到的映射文件 Uri 与 命名空间处理器放入 handlerMappings 集合handlerMappings.put(namespaceUri, namespaceHandler);&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="740" y="2480" width="1080" height="150" as="geometry" />
+          <mxGeometry x="1140" y="2480" width="1080" height="150" as="geometry" />
         </mxCell>
         <mxCell id="5atNqO5YCdcayf-Q1qNk-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#FF0000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5atNqO5YCdcayf-Q1qNk-5" target="5atNqO5YCdcayf-Q1qNk-7">
           <mxGeometry relative="1" as="geometry" />
