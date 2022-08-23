@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-23T12:21:14.042Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="2nv7_LMLULfB-jqVtEsU" version="20.2.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-23T12:25:15.340Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="_NNTNUEQuOGgpRwMiqqd" version="20.2.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="11285" dy="3526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -160,9 +160,6 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-56" value="customizeBeanFactory 看到这个有没有觉得熟悉：类似前面提到系统环境属性的扩展点: 定义&amp;nbsp; beanFactory 的 bean 的属性：&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;allowBeanDefinitionOverriding&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;allowCircularReferences&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-502" y="168.75" width="1004" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="swjzN8IUrycUAb-GRa1w-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-61" target="-McDBByZdcgpEU9wJOO_-75" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;startArrow=none;strokeWidth=5;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-75" target="-McDBByZdcgpEU9wJOO_-81" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -170,6 +167,9 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;strokeWidth=5;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-61" target="-McDBByZdcgpEU9wJOO_-65" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8aI2bJ5IGFcjeBgnvbSx-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-61" target="-McDBByZdcgpEU9wJOO_-75">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-61" value="&lt;font color=&quot;#ea6b66&quot; style=&quot;font-size: 25px;&quot;&gt;loadBeanDefinitions(beanFactory)：加载 XML(一系列的重载调用) 读取 bean 信息并解析&lt;/font&gt;&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;ol style=&quot;font-size: 25px;&quot;&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#cc6600&quot; style=&quot;font-size: 25px;&quot;&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;使用适配器模式将 beanFactory 转为转&amp;nbsp;&lt;/font&gt;XmlBeanDefinitionReader XML 解析器&amp;nbsp;XmlBeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanFactory);&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;设置 XML 解析器需要的运行环境&amp;nbsp;beanDefinitionReader.setEnvironment(this.getEnvironment());&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;设置资源加载器&amp;nbsp;beanDefinitionReader.setResourceLoader(this);&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 25px;&quot;&gt;设置用于解析 SAX 实体解析器，默认使用&amp;nbsp;ResourceEntityResolver 解析器。可以自定义实体解析覆盖，例如相对于某些特定的基本路径&amp;nbsp;beanDefinitionReader.setEntityResolver(new ResourceEntityResolver(this));&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#00cccc&quot; style=&quot;font-size: 25px;&quot;&gt;初始化解析器属性：initBeanDefinitionReader(beanDefinitionReader);&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#ffff00&quot; style=&quot;font-size: 25px;&quot;&gt;重载&amp;nbsp;loadBeanDefinitions(beanDefinitionReader);&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -205,10 +205,10 @@
         <mxCell id="-McDBByZdcgpEU9wJOO_-80" value="&lt;font style=&quot;font-size: 25px;&quot; color=&quot;#000000&quot;&gt;主流程&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Verdana;fontSize=25;fontColor=#00CCCC;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-98" y="-1290" width="196" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=18;fontColor=#FF0000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-81" target="-McDBByZdcgpEU9wJOO_-83" edge="1">
+        <mxCell id="-McDBByZdcgpEU9wJOO_-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=18;fontColor=#FF0000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=5;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-81" target="-McDBByZdcgpEU9wJOO_-83" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="swjzN8IUrycUAb-GRa1w-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-81" target="-McDBByZdcgpEU9wJOO_-85" edge="1">
+        <mxCell id="swjzN8IUrycUAb-GRa1w-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;strokeWidth=5;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-81" target="-McDBByZdcgpEU9wJOO_-85" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="swjzN8IUrycUAb-GRa1w-14" value="String[] -&amp;gt; String" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=18;" parent="swjzN8IUrycUAb-GRa1w-13" vertex="1" connectable="0">
@@ -216,11 +216,11 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-81" value="loadBeanDefinitions(XmlBeanDefinitionReader reader)：两种获取文件资源路径&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;以 Resource 方式获取&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 18px;&quot;&gt;以 String 的形式获取&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#00cccc&quot; style=&quot;font-size: 18px;&quot;&gt;重载&amp;nbsp;reader.loadBeanDefinitions(configLocations)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-3060" y="473.5" width="880" height="130" as="geometry" />
+        <mxCell id="-McDBByZdcgpEU9wJOO_-81" value="loadBeanDefinitions(XmlBeanDefinitionReader reader)：两种获取文件资源路径&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;ol style=&quot;font-size: 25px;&quot;&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;以 Resource 方式获取&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 25px;&quot;&gt;以 String 的形式获取&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#00cccc&quot; style=&quot;font-size: 25px;&quot;&gt;重载&amp;nbsp;reader.loadBeanDefinitions(configLocations)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-3780" y="380" width="1080" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-83" value="String[] configLocations = getConfigLocations()：&lt;br style=&quot;font-size: 18px;&quot;&gt;看到这个 getConfigLocations 应该很熟悉了吧，在设置配置文件路径的时候赋的值" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-3840" y="600" width="680" height="60" as="geometry" />
+        <mxCell id="-McDBByZdcgpEU9wJOO_-83" value="String[] configLocations = getConfigLocations()：&lt;br style=&quot;font-size: 25px;&quot;&gt;看到这个 getConfigLocations 应该很熟悉了吧，在设置配置文件路径的时候赋的值" style="whiteSpace=wrap;html=1;align=left;fillColor=#FF0000;strokeColor=#FF0000;rounded=0;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-4950" y="530" width="920" height="130" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-92" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 18px;&quot;&gt;&amp;nbsp;String -&amp;gt; Resource[]&lt;/span&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=18;fontColor=#FF0000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-85" target="-McDBByZdcgpEU9wJOO_-91" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -228,8 +228,8 @@
             <mxPoint x="-2050.0000000000005" y="329.69692307692276" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-85" value="loadBeanDefinitions(String... locations)&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 18px;&quot;&gt;重载&amp;nbsp;loadBeanDefinitions(location)-&amp;gt;&amp;nbsp;loadBeanDefinitions(location, null)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-3780" y="350" width="620" height="85" as="geometry" />
+        <mxCell id="-McDBByZdcgpEU9wJOO_-85" value="loadBeanDefinitions(String... locations)&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;ol style=&quot;font-size: 25px;&quot;&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 25px;&quot;&gt;重载&amp;nbsp;loadBeanDefinitions(location)-&amp;gt;&amp;nbsp;loadBeanDefinitions(location, null)&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-4930" y="190" width="900" height="135" as="geometry" />
         </mxCell>
         <mxCell id="-McDBByZdcgpEU9wJOO_-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=18;fontColor=#FFFF00;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-91" target="-McDBByZdcgpEU9wJOO_-93" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -456,14 +456,8 @@
         <mxCell id="5atNqO5YCdcayf-Q1qNk-15" value="AbstractBeanDefinition parseInternal(Element element, ParserContext parserContext)&lt;br&gt;&lt;ol&gt;&lt;li&gt;创建 BeanDefinition 生成器&amp;nbsp;BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition()&lt;/li&gt;&lt;li&gt;对 builder 的子类 (AbstractBeanDefinition) 设置，如果需要设置的话，比如：bena 父类名称， bean 的具体类， bean 类名等；&lt;/li&gt;&lt;li&gt;doParse(element, parserContext, builder) 填充 beanDefinition 属性：&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;fontColor=#000000;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-5195" y="4290" width="1140" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-75" value="设置解析方式:&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;ol style=&quot;font-size: 18px;&quot;&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;this.validationMode = 1 表示应自动检测验证模式&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 18px;&quot;&gt;this.namespaceAware&lt;b style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp;&lt;/b&gt;= false&lt;br style=&quot;font-size: 18px;&quot;&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;fontSize=18;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-2050" y="483.5" width="460" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="8aI2bJ5IGFcjeBgnvbSx-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=18;endArrow=none;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-61" target="-McDBByZdcgpEU9wJOO_-75">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-749.0400000000009" y="554.9999999999995" as="sourcePoint" />
-            <mxPoint x="-2005" y="569.2500000000005" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="-McDBByZdcgpEU9wJOO_-75" value="设置解析方式:&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;ol style=&quot;font-size: 25px;&quot;&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;this.validationMode = 1 表示应自动检测验证模式&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;this.namespaceAware&lt;b style=&quot;font-size: 25px;&quot;&gt;&amp;nbsp;&lt;/b&gt;= false&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#00CCCC;strokeColor=#00CCCC;rounded=0;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="-2550" y="390" width="700" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
