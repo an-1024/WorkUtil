@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-23T08:58:50.123Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="DI3vhescgY1F2TygxrfZ" version="20.2.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-23T09:17:52.479Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="fjZD3YwOwTlV1G925fGG" version="20.2.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="8289" dy="2077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="8647" dy="2272" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -443,11 +443,11 @@
         <mxCell id="5atNqO5YCdcayf-Q1qNk-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="5atNqO5YCdcayf-Q1qNk-11" target="5atNqO5YCdcayf-Q1qNk-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5atNqO5YCdcayf-Q1qNk-11" value="BeanDefinition parse(Element element, ParserContext parserContext)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;创建一个解析的对象，方便后续对元素属性的操作&amp;nbsp;AbstractBeanDefinition definition = parseInternal(element, parserContext)&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FF00FF;strokeColor=#FF00FF;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3019" y="2660" width="1050" height="140" as="geometry" />
+        <mxCell id="5atNqO5YCdcayf-Q1qNk-11" value="BeanDefinition parse(Element element, ParserContext parserContext)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;创建一个解析的对象，方便后续对元素属性的操作&amp;nbsp;AbstractBeanDefinition definition = parseInternal(element, parserContext)&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;创建一个&amp;nbsp;BeanDefinitionHolder&amp;nbsp;BeanDefinitionHolder holder = new BeanDefinitionHolder(definition, id, aliases)&lt;/li&gt;&lt;li&gt;调用&amp;nbsp;registerBeanDefinition(holder, parserContext.getRegistry()) 注册 BeanDefinition&lt;/li&gt;&lt;li&gt;是否要触发通知事件&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FF00FF;strokeColor=#FF00FF;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3019" y="2660" width="1050" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="5atNqO5YCdcayf-Q1qNk-15" value="AbstractBeanDefinition parseInternal(Element element, ParserContext parserContext)&lt;br&gt;&lt;ol&gt;&lt;li&gt;创建 BeanDefinition 生成器&amp;nbsp;BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition()&lt;/li&gt;&lt;li&gt;对 builder 的子类 (AbstractBeanDefinition) 设置，比如：bena 父类名称， bean 的具体类， bean 类名等；&lt;/li&gt;&lt;li&gt;doParse(element, parserContext, builder) 填充 beanDefinition 属性：&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="4160" y="2670" width="930" height="120" as="geometry" />
+        <mxCell id="5atNqO5YCdcayf-Q1qNk-15" value="AbstractBeanDefinition parseInternal(Element element, ParserContext parserContext)&lt;br&gt;&lt;ol&gt;&lt;li&gt;创建 BeanDefinition 生成器&amp;nbsp;BeanDefinitionBuilder builder = BeanDefinitionBuilder.genericBeanDefinition()&lt;/li&gt;&lt;li&gt;对 builder 的子类 (AbstractBeanDefinition) 设置，如果需要设置的话，比如：bena 父类名称， bean 的具体类， bean 类名等；&lt;/li&gt;&lt;li&gt;doParse(element, parserContext, builder) 填充 beanDefinition 属性：&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=18;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;fontColor=#000000;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="4160" y="2690" width="1140" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
