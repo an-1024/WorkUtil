@@ -27,4 +27,12 @@ java: JPS incremental annotation processing is disabled. Compilation results on 
 -Djps.track.ap.dependencies=false
 ```
 
+# MAC IDEA 常用快捷键
+1. 查看方法的调用链：Ctrl + Alt + H
+2. 优化import语句: Ctrl + Alt + O, 剔除无用的import语句，强迫症选手必用。
+3. 查看uml类图 Command + Alt + U
+4. 生成代码（getter、setter、hashCode、equals、toString、构造函数等） Command + N, Control + Enter, Control + N
+5. Control + O 	覆盖方法（重写父类方法）
+6. Control + I 实现方法（实现接口中的方法）
+
 
