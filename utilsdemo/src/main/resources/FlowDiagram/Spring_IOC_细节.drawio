@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-25T10:22:48.363Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="qyxc1G8we9AqWMH4P9jH" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-27T02:35:38.471Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="YeElc55nHou7uEjuOVgZ" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="23035" dy="3853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="22672" dy="3620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -517,7 +517,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-13" value="StandardBeanExpressionResolver(@Nullable ClassLoader beanClassLoader)：&lt;br&gt;&lt;ol&gt;&lt;li&gt;来看下这类的属性&lt;/li&gt;&lt;ol&gt;&lt;li&gt;public static final String DEFAULT_EXPRESSION_PREFIX = &quot;#{&quot;;&lt;br&gt;&lt;/li&gt;&lt;li&gt;public static final String DEFAULT_EXPRESSION_SUFFIX = &quot;}&quot;;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;&lt;font color=&quot;#ff00ff&quot;&gt;this.expressionParser = new SpelExpressionParser(new SpelParserConfiguration(null, beanClassLoader))&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#F19C99;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="900" y="175.34" width="1390" height="224.66" as="geometry" />
+          <mxGeometry x="900" y="190" width="1390" height="224.66" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#FFFF00;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-15" target="t0Rb5IohVzh9Mymz01Zp-17">
           <mxGeometry relative="1" as="geometry" />
@@ -526,13 +526,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-15" value="SpelParserConfiguration(@Nullable SpelCompilerMode compilerMode, @Nullable ClassLoader compilerClassLoader)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;this(compilerMode, compilerClassLoader, false, false, Integer.MAX_VALUE)调用自己的构造函数赋值&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2379.25" y="225.17000000000002" width="1339" height="128.12" as="geometry" />
+          <mxGeometry x="2411" y="238.27" width="1339" height="128.12" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-17" value="&lt;div&gt;SpelParserConfiguration(@Nullable SpelCompilerMode compilerMode, @Nullable ClassLoader compilerClassLoader,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;			&lt;/span&gt;boolean autoGrowNullReferences, boolean autoGrowCollections, int maximumAutoGrowSize)&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;this.compilerMode = (compilerMode != null ? compilerMode : defaultCompilerMode); 编译器模式 OFF 关闭，在 static 中处理赋值&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.compilerClassLoader = compilerClassLoader;&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.autoGrowNullReferences = autoGrowNullReferences&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.autoGrowCollections = autoGrowCollections&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.maximumAutoGrowSize = maximumAutoGrowSize&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3808.5" y="145.17000000000002" width="1480" height="285" as="geometry" />
+          <mxGeometry x="3850" y="159.83" width="1480" height="285" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-19" value="SpelExpressionParser(SpelParserConfiguration configuration)&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.configuration = configuration&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF00FF;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2670" width="757.5" height="125.62" as="geometry" />
+          <mxGeometry x="2701.75" width="757.5" height="125.62" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#FF00FF;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-21" target="t0Rb5IohVzh9Mymz01Zp-25">
           <mxGeometry relative="1" as="geometry" />
@@ -556,7 +556,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-31" value="EmbeddedValueResolver(ConfigurableBeanFactory beanFactory)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;this.exprContext = new BeanExpressionContext(beanFactory, null);&amp;nbsp;用于评估 bean 定义中的表达式的上下文对象。&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#00ffff&quot;&gt;this.exprResolver = beanFactory.getBeanExpressionResolver();&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2210" y="1124.44" width="1040" height="161.11" as="geometry" />
+          <mxGeometry x="2200" y="1105.62" width="1040" height="195.55" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-33" value="BeanExpressionContext(ConfigurableBeanFactory beanFactory, @Nullable Scope scope)&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.beanFactory = beanFactory;&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.scope = scope&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="3370" y="1016.8800000000001" width="1060" height="148.74" as="geometry" />
