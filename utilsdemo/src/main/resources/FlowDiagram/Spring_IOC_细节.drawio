@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-27T03:52:16.348Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="XTAc1fDoBonEeLVB5hy7" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-28T20:21:19.039Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="iVW3cRepisvPNRFNUgrS" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="23035" dy="3853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="22741" dy="3435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -141,7 +141,7 @@
         <mxCell id="ZeKIb3R78Dg6MLLJOp1T-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.561;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=25;fontColor=#80FF00;strokeWidth=5;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-43" target="-McDBByZdcgpEU9wJOO_-61" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="-McDBByZdcgpEU9wJOO_-43" value="refreshBeanFactory&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;存在 BeanFactory 就销毁&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#ffff00&quot; style=&quot;font-size: 25px;&quot;&gt;创建 BeanFactory 工厂&amp;nbsp;DefaultListableBeanFactory beanFactory = createBeanFactory()&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;customizeBeanFactory(beanFactory); 看到这个有没有觉得熟悉：类似前面提到系统环境属性的扩展点: 定义&amp;nbsp; beanFactory 的 bean 的属性：&lt;/font&gt;allowBeanDefinitionOverriding，allowCircularReferences&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#80ff00&quot; style=&quot;font-size: 25px;&quot;&gt;loadBeanDefinitions(beanFactory);&amp;nbsp;初始化配置定义的 bean 信息，并读取解析&lt;/font&gt;&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;this.beanFactory = beanFactory;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#E06D0D;strokeColor=#82b366;rounded=0;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="-McDBByZdcgpEU9wJOO_-43" value="refreshBeanFactory&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;存在 BeanFactory 就销毁&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#ffff00&quot; style=&quot;font-size: 25px;&quot;&gt;创建 BeanFactory 工厂&amp;nbsp;DefaultListableBeanFactory beanFactory = createBeanFactory()&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font style=&quot;font-size: 25px;&quot;&gt;customizeBeanFactory(beanFactory); 看到这个有没有觉得熟悉：类似前面提到系统环境属性的扩展点: 定义&amp;nbsp; beanFactory 的属性：&lt;/font&gt;allowBeanDefinitionOverriding，allowCircularReferences，提供对 beanFactory的操作接口：比如添加&amp;nbsp;&lt;/li&gt;&lt;li style=&quot;font-size: 25px;&quot;&gt;&lt;font color=&quot;#80ff00&quot; style=&quot;font-size: 25px;&quot;&gt;loadBeanDefinitions(beanFactory);&amp;nbsp;初始化配置定义的 bean 信息，并读取解析&lt;/font&gt;&lt;br style=&quot;font-size: 25px;&quot;&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;this.beanFactory = beanFactory;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;align=left;fillColor=#E06D0D;strokeColor=#82b366;rounded=0;fontSize=25;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-2750" y="11.9" width="1270" height="278.1" as="geometry" />
         </mxCell>
         <mxCell id="ZeKIb3R78Dg6MLLJOp1T-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=5;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="-McDBByZdcgpEU9wJOO_-47" target="-McDBByZdcgpEU9wJOO_-50" edge="1">
@@ -486,8 +486,11 @@
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#0000FF;strokeWidth=5;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-0" target="t0Rb5IohVzh9Mymz01Zp-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="t0Rb5IohVzh9Mymz01Zp-0" value="prepareBeanFactory(beanFactory)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;getClassLoader() 熟不熟悉，就是最开始 supper(parent) 时设置的，在这里进行获取&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;beanFactory.setBeanClassLoader(getClassLoader()) 设置资源加载器，&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#f19c99&quot;&gt;beanFactory.setBeanExpressionResolver(new StandardBeanExpressionResolver(beanFactory.getBeanClassLoader())); 设置 beanFactory 表达式的语言处理器&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff00ff&quot;&gt;beanFactory.addPropertyEditorRegistrar(new ResourceEditorRegistrar(this, getEnvironment()))&amp;nbsp;为 beanFactory 增加一个默认的 PropertyEditorRegistrar, 这个主要是针对 bean 属性等设置管理的一个工具类，可以自定义扩展类实现 beanFactory 的解析: 比如解析 地址：xxx_xxx_xx 定义相应的规则实现解析&amp;nbsp;这个解析方法是 registerCustomEditors, 可以重写实现我自己的解析方法&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0000ff&quot;&gt;beanFactory.addBeanPostProcessor(new ApplicationContextAwareProcessor(this)) 添加 bean 实例化后的后置处理器(我们可以自己创建一个 Aware 类实现 BeanPostProcessor 接口，可以实现对(这样的需求很少))某些 Aware 的注入&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="-1112.65" y="370" width="1915.31" height="350" as="geometry" />
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-0" target="t0Rb5IohVzh9Mymz01Zp-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-0" value="prepareBeanFactory(beanFactory)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;getClassLoader() 熟不熟悉，就是最开始 supper(parent) 时设置的，在这里进行获取&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;beanFactory.setBeanClassLoader(getClassLoader()) 设置资源加载器，&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#f19c99&quot;&gt;beanFactory.setBeanExpressionResolver(new StandardBeanExpressionResolver(beanFactory.getBeanClassLoader())); 设置 beanFactory 表达式的语言处理器&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff00ff&quot;&gt;beanFactory.addPropertyEditorRegistrar(new ResourceEditorRegistrar(this, getEnvironment()))&amp;nbsp;为 beanFactory 增加一个默认的 PropertyEditorRegistrar, 这个主要是针对 bean 属性等设置管理的一个工具类，可以自定义扩展类实现 beanFactory 的解析: 比如解析 地址：xxx_xxx_xx 定义相应的规则实现解析&amp;nbsp;这个解析方法是 registerCustomEditors, 可以重写实现我自己的解析方法&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0000ff&quot;&gt;beanFactory.addBeanPostProcessor(new ApplicationContextAwareProcessor(this)) 添加 bean 实例化后的后置处理器(我们可以自己创建一个 Aware 类实现 BeanPostProcessor 接口，可以实现对(这样的需求很少))某些 Aware 的注入&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;忽略一些接口的注入，这是因为这些接口在实现 BenaPostProcessor 的 Aware 接口中已经设置过了, 不需要重复注入&lt;/li&gt;&lt;li&gt;设置几个自动装配的特殊规则，当在进行 ioc 初始化的如果有多个实现，那么就使用指定的对象进行注入比如注入对象的时候，根据类型注入。比如 BeanFactory 接口就有多个实现，我们通过beanFactory.registerResolvableDependency(BeanFactory.class, beanFactory); 可以指定具体的实现对象&lt;/li&gt;&lt;li&gt;添加 bean 实例化后的后置处理器&amp;nbsp;beanFactory.addBeanPostProcessor(new ApplicationListenerDetector(this))&lt;br&gt;&lt;/li&gt;&lt;li&gt;&amp;nbsp;添加对 aspectJ 的支持。aspectJ 提供了两种织入(AOP)方式，第一种是通过特殊编译器，将 aspectJ 语言编写的切面类织入到 Java 中，第二种就是类加载器织入，就是下面这段代码 ：如果 beanFactory 中包含了&amp;nbsp;loadTimeWeaver，则添加new LoadTimeWeaverAwareProcessor(beanFactory)&lt;/li&gt;&lt;li&gt;将 默认的系统环境添加到一级缓存中 environment、systemProperties、systemEnvironment&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-1112.65" y="370" width="1915.31" height="550" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#FFFF00;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-3" target="t0Rb5IohVzh9Mymz01Zp-7">
           <mxGeometry relative="1" as="geometry" />
@@ -508,7 +511,7 @@
           <mxGeometry x="7100" y="-932.5" width="600" height="175" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-11" value="ClassLoader getClassLoader()&lt;br&gt;&lt;ol&gt;&lt;li&gt;return (this.classLoader != null ? this.classLoader : ClassUtils.getDefaultClassLoader())&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="900" y="11.900000000000027" width="1040" height="127.81" as="geometry" />
+          <mxGeometry x="1070" y="23.800000000000026" width="1040" height="127.81" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#FF0000;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-13" target="t0Rb5IohVzh9Mymz01Zp-15">
           <mxGeometry relative="1" as="geometry" />
@@ -517,7 +520,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-13" value="StandardBeanExpressionResolver(@Nullable ClassLoader beanClassLoader)：&lt;br&gt;&lt;ol&gt;&lt;li&gt;来看下这类的属性&lt;/li&gt;&lt;ol&gt;&lt;li&gt;public static final String DEFAULT_EXPRESSION_PREFIX = &quot;#{&quot;;&lt;br&gt;&lt;/li&gt;&lt;li&gt;public static final String DEFAULT_EXPRESSION_SUFFIX = &quot;}&quot;;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;&lt;font color=&quot;#ff00ff&quot;&gt;this.expressionParser = new SpelExpressionParser(new SpelParserConfiguration(null, beanClassLoader))&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#F19C99;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="900" y="190" width="1390" height="224.66" as="geometry" />
+          <mxGeometry x="1070" y="201.9" width="1390" height="224.66" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#FFFF00;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-15" target="t0Rb5IohVzh9Mymz01Zp-17">
           <mxGeometry relative="1" as="geometry" />
@@ -526,28 +529,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-15" value="SpelParserConfiguration(@Nullable SpelCompilerMode compilerMode, @Nullable ClassLoader compilerClassLoader)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;this(compilerMode, compilerClassLoader, false, false, Integer.MAX_VALUE)调用自己的构造函数赋值&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2411" y="238.27" width="1339" height="128.12" as="geometry" />
+          <mxGeometry x="2581" y="250.17000000000002" width="1339" height="128.12" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-17" value="&lt;div&gt;SpelParserConfiguration(@Nullable SpelCompilerMode compilerMode, @Nullable ClassLoader compilerClassLoader,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;			&lt;/span&gt;boolean autoGrowNullReferences, boolean autoGrowCollections, int maximumAutoGrowSize)&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li&gt;this.compilerMode = (compilerMode != null ? compilerMode : defaultCompilerMode); 编译器模式 OFF 关闭，在 static 中处理赋值&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.compilerClassLoader = compilerClassLoader;&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.autoGrowNullReferences = autoGrowNullReferences&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.autoGrowCollections = autoGrowCollections&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.maximumAutoGrowSize = maximumAutoGrowSize&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3850" y="159.83" width="1480" height="285" as="geometry" />
+          <mxGeometry x="4020" y="171.73000000000002" width="1480" height="285" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-19" value="SpelExpressionParser(SpelParserConfiguration configuration)&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.configuration = configuration&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF00FF;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2701.75" width="757.5" height="125.62" as="geometry" />
+          <mxGeometry x="2871.75" y="11.899999999999999" width="757.5" height="125.62" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#FF00FF;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-21" target="t0Rb5IohVzh9Mymz01Zp-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-21" value="ResourceEditorRegistrar(ResourceLoader resourceLoader, PropertyResolver propertyResolver) 创建编辑器的时候付初始值&amp;nbsp;&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.resourceLoader = resourceLoader;&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.propertyResolver = propertyResolver&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;在&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;在 ResourceEditorRegistrar 类中实现了接口类 PropertyEditorRegistrar 的registerCustomEditors(PropertyEditorRegistry registry) 方法完成&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;bean 的解析。所以我们可以创建一个自己的资源编辑器并实现这个接口来完成自定义bean的解析，&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF00FF;strokeColor=#FF00FF;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="900" y="703.87" width="1700" height="246.88" as="geometry" />
+          <mxGeometry x="1070" y="715.77" width="1700" height="246.88" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-25" value="addPropertyEditorRegistrar(PropertyEditorRegistrar registrar)&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.propertyEditorRegistrars.add(registrar); 将编辑器添加到&amp;nbsp;自定义 PropertyEditor 注册器以应用于此工厂的 bean 的集合中&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2710" y="742.55" width="1040" height="169.53" as="geometry" />
+          <mxGeometry x="2880" y="754.4499999999999" width="1040" height="169.53" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-29" target="t0Rb5IohVzh9Mymz01Zp-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-29" value="&lt;font color=&quot;#ff0000&quot;&gt;ApplicationContextAwareProcessor(ConfigurableApplicationContext applicationContext)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;this.applicationContext = applicationContext;&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;this.embeddedValueResolver = new EmbeddedValueResolver(applicationContext.getBeanFactory());&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#0000FF;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="900" y="1105.62" width="1210" height="198.74" as="geometry" />
+          <mxGeometry x="1070" y="1117.52" width="1210" height="198.74" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#FFFF00;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-31" target="t0Rb5IohVzh9Mymz01Zp-33">
           <mxGeometry relative="1" as="geometry" />
@@ -556,16 +559,37 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-31" value="EmbeddedValueResolver(ConfigurableBeanFactory beanFactory)&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ffff00&quot;&gt;this.exprContext = new BeanExpressionContext(beanFactory, null);&amp;nbsp;用于评估 bean 定义中的表达式的上下文对象。&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#00ffff&quot;&gt;this.exprResolver = beanFactory.getBeanExpressionResolver();&lt;/font&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2200" y="1105.62" width="1040" height="195.55" as="geometry" />
+          <mxGeometry x="2370" y="1117.52" width="1040" height="195.55" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-33" value="BeanExpressionContext(ConfigurableBeanFactory beanFactory, @Nullable Scope scope)&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.beanFactory = beanFactory;&lt;br&gt;&lt;/li&gt;&lt;li&gt;this.scope = scope&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3370" y="1016.8800000000001" width="1060" height="148.74" as="geometry" />
+          <mxGeometry x="3540" y="1028.7800000000002" width="1060" height="148.74" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-35" value="BeanExpressionResolver getBeanExpressionResolver()&lt;br&gt;&lt;ol&gt;&lt;li&gt;return this.beanExpressionResolver&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#00FFFF;strokeColor=#00FFFF;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="3370" y="1210" width="870" height="124.37" as="geometry" />
+          <mxGeometry x="3540" y="1221.9" width="870" height="124.37" as="geometry" />
         </mxCell>
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-37" value="public void setBeanExpressionResolver(@Nullable BeanExpressionResolver resolver)&lt;br&gt;&lt;ol&gt;&lt;li&gt;this.beanExpressionResolver = resolver;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#F19C99;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1080" y="490" width="1030" height="140" as="geometry" />
+          <mxGeometry x="1250" y="501.9" width="1030" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-40" target="t0Rb5IohVzh9Mymz01Zp-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-40" value="postProcessBeanFactory(beanFactory)：&lt;span style=&quot;background-color: initial;&quot;&gt;子类覆盖方法做额外的处理，此处一般不做任何扩展工作，在 Spring MVC 中有相关的操作&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-686.26" y="1070" width="1062.51" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;strokeWidth=5;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-42" target="t0Rb5IohVzh9Mymz01Zp-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-42" value="invokeBeanFactoryPostProcessors(beanFactory)：调用各种 beanFactory 处理器&lt;br&gt;&lt;ol style=&quot;color: rgb(0, 0, 255);&quot;&gt;&lt;li&gt;&lt;font color=&quot;#0000ff&quot;&gt;PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(beanFactory, getBeanFactoryPostProcessors())&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-854.69" y="1674.99" width="1399.37" height="225.63" as="geometry" />
+        </mxCell>
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#FFFF00;strokeWidth=5;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="t0Rb5IohVzh9Mymz01Zp-44" target="t0Rb5IohVzh9Mymz01Zp-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-44" value="&lt;font color=&quot;#ffff00&quot;&gt;getBeanFactoryPostProcessors():&amp;nbsp; 获取已经注册的&amp;nbsp;beanFactoryPostProcessor，我们可以通过重写前面提到过的 customizeBeanFactory()&amp;nbsp; 方法将我们自己实现&lt;/font&gt;&lt;span style=&quot;color: rgb(255, 255, 0);&quot;&gt;BeanFactoryPostProcessors的类添加到&lt;/span&gt;&lt;font color=&quot;#ffff00&quot;&gt;beanFactoryPostProcessors集合中&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#0000FF;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="660" y="1510" width="1120" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-46" value="&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;invokeBeanFactoryPostProcessors(beanFactory, getBeanFactoryPostProcessors())&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="730" y="1740" width="980" height="85" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
