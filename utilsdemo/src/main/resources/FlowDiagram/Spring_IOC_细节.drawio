@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-28T20:21:19.039Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="iVW3cRepisvPNRFNUgrS" version="20.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-30T08:15:15.449Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="lRkjQKYMkqB9fiocuxtR" version="20.2.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="22741" dy="3435" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="22202" dy="3251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -588,8 +588,8 @@
         <mxCell id="t0Rb5IohVzh9Mymz01Zp-44" value="&lt;font color=&quot;#ffff00&quot;&gt;getBeanFactoryPostProcessors():&amp;nbsp; 获取已经注册的&amp;nbsp;beanFactoryPostProcessor，我们可以通过重写前面提到过的 customizeBeanFactory()&amp;nbsp; 方法将我们自己实现&lt;/font&gt;&lt;span style=&quot;color: rgb(255, 255, 0);&quot;&gt;BeanFactoryPostProcessors的类添加到&lt;/span&gt;&lt;font color=&quot;#ffff00&quot;&gt;beanFactoryPostProcessors集合中&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#0000FF;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="660" y="1510" width="1120" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="t0Rb5IohVzh9Mymz01Zp-46" value="&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;invokeBeanFactoryPostProcessors(beanFactory, getBeanFactoryPostProcessors())&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="730" y="1740" width="980" height="85" as="geometry" />
+        <mxCell id="t0Rb5IohVzh9Mymz01Zp-46" value="&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;invokeBeanFactoryPostProcessors(beanFactory, getBeanFactoryPostProcessors())&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(0, 0, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF00;strokeColor=#FFFF00;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="730" y="1740" width="980" height="190" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
