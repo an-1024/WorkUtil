@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-09T02:37:36.634Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="g_39ib48iVQxRbjX8WIL" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-09T03:04:39.591Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="JKLHYJrARtWj37yhszIF" version="20.2.7" type="github">
   <diagram id="5NB4G_r7THuZfwFhjtke" name="第 1 页">
-    <mxGraphModel dx="2681" dy="1109" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4536" dy="2217" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -108,7 +108,7 @@
           <mxGeometry x="-460" y="1420" width="384" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k5VyGEv89mvCeNctKzKc-40" value="ng-platform -》对接 CRM (Customer Relation Manemenget ) （这个系统就是问题 2 中指定接口对应关系的系统）" style="whiteSpace=wrap;html=1;fontSize=25;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="130" y="1420" width="680" height="60" as="geometry" />
+          <mxGeometry x="130" y="1420" width="680" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
