@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-09T03:04:39.591Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="JKLHYJrARtWj37yhszIF" version="20.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-09T03:14:14.559Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="kPo7VbzkLDTe1Nlrruz2" version="20.2.7" type="github">
   <diagram id="5NB4G_r7THuZfwFhjtke" name="第 1 页">
-    <mxGraphModel dx="4536" dy="2217" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2990" dy="1293" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -54,13 +54,8 @@
         <mxCell id="k5VyGEv89mvCeNctKzKc-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-12" target="k5VyGEv89mvCeNctKzKc-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k5VyGEv89mvCeNctKzKc-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-12" target="k5VyGEv89mvCeNctKzKc-24">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="129" y="820" />
-              <mxPoint x="549" y="820" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-12" target="k5VyGEv89mvCeNctKzKc-24">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="k5VyGEv89mvCeNctKzKc-12" value="CSF(Customer Service Framwork): 客户服务框架，本部部署，各分部的所有路由信息都要注册到这个系统中-》类似于 ZK 的分布式管理" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fontColor=#ffffff;fillColor=#1ba1e2;strokeColor=#006EAF;" vertex="1" parent="1">
           <mxGeometry x="-660" y="440" width="1578" height="280" as="geometry" />
@@ -80,8 +75,8 @@
         <mxCell id="k5VyGEv89mvCeNctKzKc-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-24" target="k5VyGEv89mvCeNctKzKc-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k5VyGEv89mvCeNctKzKc-24" value="分中心B存有自己的信息" style="whiteSpace=wrap;html=1;fontSize=25;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="414" y="915" width="270" height="60" as="geometry" />
+        <mxCell id="k5VyGEv89mvCeNctKzKc-24" value="分中心B存有自己的数据信息" style="whiteSpace=wrap;html=1;fontSize=25;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="910" width="336" height="65" as="geometry" />
         </mxCell>
         <mxCell id="k5VyGEv89mvCeNctKzKc-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-29" target="k5VyGEv89mvCeNctKzKc-30">
           <mxGeometry relative="1" as="geometry" />
