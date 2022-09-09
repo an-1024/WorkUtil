@@ -1,1 +1,116 @@
-<mxfile host="app.diagrams.net" modified="2022-09-09T00:59:50.393Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" version="20.2.7" etag="9pWTDPI53bP4DxUNkQbv" type="github"><diagram id="5NB4G_r7THuZfwFhjtke">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-09T02:37:36.634Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="g_39ib48iVQxRbjX8WIL" version="20.2.7" type="github">
+  <diagram id="5NB4G_r7THuZfwFhjtke" name="第 1 页">
+    <mxGraphModel dx="2681" dy="1109" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k5VyGEv89mvCeNctKzKc-27" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-631" y="800" width="1520" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-1" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Web(本部部署的一套前端系统)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-116" y="110" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-3" value="" style="endArrow=classic;html=1;rounded=0;fontSize=25;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-496" y="220" as="sourcePoint" />
+            <mxPoint x="834" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-4" value="本部为实现一体化管理，针对于下游各个分中心&lt;br&gt;前端系统，要求实现嵌入式开发，解决跨地区的网络问题&lt;br&gt;共享 session" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;fontSize=25;fontColor=#FF3333;" connectable="0" vertex="1" parent="k5VyGEv89mvCeNctKzKc-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-5" target="k5VyGEv89mvCeNctKzKc-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-5" value="ng-localcore:本地业务&lt;br&gt;(ng-&amp;gt;next generation)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-426" y="320" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=25;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-1" target="k5VyGEv89mvCeNctKzKc-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-8" target="k5VyGEv89mvCeNctKzKc-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-8" value="ng-businesscore:企业级业务&lt;br&gt;(ng-&amp;gt;next generation)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-46" y="320" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-10" target="k5VyGEv89mvCeNctKzKc-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-10" value="ng-workflowcore:工作流&lt;br&gt;(ng-&amp;gt;next generation)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="354" y="320" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=25;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-1" target="k5VyGEv89mvCeNctKzKc-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=25;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-1" target="k5VyGEv89mvCeNctKzKc-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-12" target="k5VyGEv89mvCeNctKzKc-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-12" target="k5VyGEv89mvCeNctKzKc-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-12" target="k5VyGEv89mvCeNctKzKc-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="129" y="820" />
+              <mxPoint x="549" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-12" value="CSF(Customer Service Framwork): 客户服务框架，本部部署，各分部的所有路由信息都要注册到这个系统中-》类似于 ZK 的分布式管理" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fontColor=#ffffff;fillColor=#1ba1e2;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="-660" y="440" width="1578" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-20" target="k5VyGEv89mvCeNctKzKc-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-20" value="本部存有自己的数据信息" style="whiteSpace=wrap;html=1;fontSize=25;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-470" y="910" width="310" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-22" target="k5VyGEv89mvCeNctKzKc-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-22" value="分中心A存有自己的数据信息" style="whiteSpace=wrap;html=1;fontSize=25;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-35.25" y="910" width="328.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-24" target="k5VyGEv89mvCeNctKzKc-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-24" value="分中心B存有自己的信息" style="whiteSpace=wrap;html=1;fontSize=25;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="915" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-29" target="k5VyGEv89mvCeNctKzKc-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-29" value="问题 1：那么系统是如何知道不存在于本部的数据是到分中心A查找还是到分中心B查找" style="text;html=1;strokeColor=#B20000;fillColor=#e51400;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="810" y="820" width="554" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-30" value="问题 1 解决办法：在 CSF 中会有分中心不同的 code 编码，需要客户给出自己的业务归属地，本部根据 code 编码进行业务分发&lt;br&gt;问题 2 解决方案：分中心要求本部开放业务接口，双方进行接口定义，通过暴露接口的方式实现双放数据交互。与此同时，双方交互的接口要对应：即分中心开放接口被本部或者其他渠道调用时，分中心会配置对应的渠道 code 注册到本部或者告知渠道方，当有外部请求，分中心会根据 code 进行区分渠道或者本部。从而进行不同的业务处理(因此对于本部或者分中心来说，都要维护一套接口映射的数据的系统-》ng-route)" style="whiteSpace=wrap;html=1;fontSize=25;fillColor=#60a917;strokeColor=#2D7600;fontColor=#ffffff;rounded=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="889" y="450" width="1151" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-32" value="问题 2：本部数据与分中心的数据如何打通，本部与分中心服务可能不仅仅是跨机房，可能是跨市跨省" style="text;html=1;strokeColor=#B20000;fillColor=#e51400;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="810" y="940" width="890" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-33" target="k5VyGEv89mvCeNctKzKc-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=25;fontColor=#000000;" edge="1" parent="1" source="k5VyGEv89mvCeNctKzKc-33" target="k5VyGEv89mvCeNctKzKc-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-33" value="ng-route(工单处理系统)：因为某系原因：从工单系统中拆分出一套 ng-platform 系统" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;fillColor=#fad7ac;strokeColor=#b46504;" vertex="1" parent="1">
+          <mxGeometry x="-344" y="1160" width="946" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-38" value="ng-route 主要负责客诉，三方渠道的业务，功能比较揉杂" style="whiteSpace=wrap;html=1;fontSize=25;fillColor=#60a917;strokeColor=#2D7600;rounded=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-460" y="1420" width="384" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k5VyGEv89mvCeNctKzKc-40" value="ng-platform -》对接 CRM (Customer Relation Manemenget ) （这个系统就是问题 2 中指定接口对应关系的系统）" style="whiteSpace=wrap;html=1;fontSize=25;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1420" width="680" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
