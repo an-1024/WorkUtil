@@ -150,7 +150,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 设置 .zshrc 主题:
 
 ```shell
-et ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
+ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
 具体 Theme 的自定义样式在这个链接中:
@@ -159,7 +159,7 @@ https://github.com/Powerlevel9k/powerlevel9k/wiki/Show-Off-Your-Config
 
 虽然是 Powerlevel9k 但是 10 的也可以用。
 
-注意不同的字体可能需要对应不同的字体，否则会出现乱码。具体终端如何配置字体这里就不过多赘述了。
+注意不同的字体可能需要对应不同的字体，否则会出现乱码，主题下面会有对应的安装说明。具体终端如何配置字体这里就不过多赘述了。
 
 重新配置
 
@@ -188,15 +188,15 @@ p10k configure
 
 command + space，在聚焦搜索中搜索 Automator , 然后在你的任务兰中单击 Automator, 选取服务：
 
-![Automator样列](../../photo/2.Automator样列.png)
+![Automator样列](../../photo/3.Automator样列.png)
 
 进入操作页面后，选择使用工具, 点击右侧的 AppleScript。 如下图:
 
-![Automator_AppleScript](../../photo/3.Automator_AppleScript.png)
+![Automator_AppleScript](../../photo/4.Automator_AppleScript.png)
 
 双击运行 AppScript 然后将右边的文本输入修改为如下程序:
 
-![Automator_AppScript_Run](../../photo/4.Automator_AppleScript_Run.png)
+![Automator_AppScript_Run](../../photo/5.Automator_AppleScript_Run.png)
 
 ```shell
 on run {input, parameters}
@@ -211,7 +211,7 @@ command + s 保存，命名：openTerminal
 
 然后退出啊，点击左上角的苹果图标，选择偏好设置-》键盘设置-》快捷键-》服务，找到刚才命名的服务，选中添加快捷键，然后推出，使用快捷键测试是否生效。
 
-![](../../photo/5.Automator_AppleScript_KeyMap.png)
+![](../../photo/6.Automator_AppleScript_KeyMap.png)
 
 # Mac 无法创建公司日志的文件夹
 

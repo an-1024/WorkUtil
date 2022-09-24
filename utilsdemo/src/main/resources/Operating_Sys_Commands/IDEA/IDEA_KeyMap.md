@@ -22,7 +22,7 @@ java: JPS incremental annotation processing is disabled. Compilation results on 
 ```
 解决方案：
 
-![](../../photo/6.idea_JPS_Error.png)
+![](../../photo/7.idea_JPS_Error.png)
 ```text
 -Djps.track.ap.dependencies=false
 ```
