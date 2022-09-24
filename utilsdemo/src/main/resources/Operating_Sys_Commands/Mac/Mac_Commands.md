@@ -263,3 +263,9 @@ source /etc/profile
 java -version
 ```
 
+# mac 安装破解软件提示安装包损坏
+打开终端，输入命令：
+```shell
+sudo spctl --master-disable
+```
+然后打开系统偏好设置：打开系统偏好设置 > 安全性与隐私，若显示任何来源，然后再次打开破解软件即可
