@@ -5,8 +5,8 @@
 git 常用的配置一般来说就两个：1. 全局用户配置；2. 全局邮箱配置。无论对于 github 还是 gitlab 来说，仓库的关联都是通过这两个配置实现。命令如下：
 
 ```shell
-git config --global user.name xxxxx # xxx  表示你的姓名
-git config --global user.email xxxxx@xxx # xxxxx@xxx 表示你的邮箱地址 
+git config --global user.name "xxxxx" # xxx  表示你的姓名
+git config --global user.email "xxxxx@xxx" # xxxxx@xxx 表示你的邮箱地址 
 ```
 
 第二个配置是针对一些常用的 git 命令，我们可以配置别名，配置方式有两种：
