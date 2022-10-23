@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-23T12:07:35.652Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="CbG2u_67hv0AyW7E6-rl" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-23T12:07:43.561Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="PVZ2UnpATuzP1PKKbYid" version="20.3.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="22672" dy="3621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -601,7 +601,7 @@
           <mxGeometry x="2700" y="1694.5" width="1290" height="1027" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-4" value="org.springframework.context.annotation.ConfigurationClassUtils#checkConfigurationClassCandidate：&lt;br&gt;&lt;ol&gt;&lt;li&gt;&amp;nbsp;获取 BeanDefinition 名称，为 null 则返回 false；&lt;/li&gt;&lt;li&gt;反之，判断该 BeanDefinition 是否属于&amp;nbsp;AnnotationMetadata 类型；(通过注解注入的类都属于 AnnotationMetadata，因为因为该接口继承了 BeanDefinition 接口)，且 bean 名称与 AnnotationMetadata获取的 bean 名称是否相同：相同则从 AnnotationMetadata 中获取&amp;nbsp;metadata 数据元信息&lt;/li&gt;&lt;li&gt;如果属于 AnnotationMetadata， 则判断 BeanDefinition 是否属于 AbstractBeanDefinition；如果属于，则获取当前对象的 class 对象，并判断该对象是否属于指定的几种类型，如果不是泽根据 beanClass 生成对应的 AnnotationMetadata；&lt;/li&gt;&lt;li&gt;如果不属于 AnnotationMetadata，则直接获取元数据读取器，利用原数据读取器获取元数据信息；&lt;/li&gt;&lt;li&gt;判断注解是否是 Configuration 注解，如果是，则给 BeanDefinition 的 attribute 设置属性值：full&lt;/li&gt;&lt;li&gt;反之如果包含&amp;nbsp;@Bean，@ComponentScan, @Import @ImportSource 注解，则设置属性为：lite；&lt;/li&gt;&lt;li&gt;注解类是否添加了 @Order 注解，获取 Order 注解的值，给BeanDefinition 设置 order 属性；&lt;/li&gt;&lt;li&gt;最终返回 true；&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="4160" y="1972" width="1180" height="472" as="geometry" />
+          <mxGeometry x="4160" y="1972" width="1180" height="498" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
