@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-23T12:07:43.561Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="PVZ2UnpATuzP1PKKbYid" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-23T12:39:32.552Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="n2OFuPnsJiMNovAE8Joo" version="20.3.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="22672" dy="3621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -597,11 +597,85 @@
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;fontColor=#FF0000;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RU2fjSCJP_jP4QLkFLcv-2" target="RU2fjSCJP_jP4QLkFLcv-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RU2fjSCJP_jP4QLkFLcv-2" value="&lt;font color=&quot;#ffff00&quot;&gt;在执行后置处理器的时候，这里有一个Spring 内置的处理器实现类&amp;nbsp;ConfigurationClassPostProcessor，该类实现了&amp;nbsp;BeanDefinitionRegistryPostProcessor 接口，而&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(255, 255, 0);&quot;&gt;BeanDefinitionRegistryPostProcessor 继承了&lt;/span&gt;&lt;font color=&quot;#ffff00&quot;&gt;BeanFactoryPostProcessor 接口，因此执行后置处理器的时候会执行&lt;/font&gt;&lt;span style=&quot;color: rgb(255, 255, 0);&quot;&gt;ConfigurationClassPostProcessor.&lt;/span&gt;&lt;br&gt;&lt;font color=&quot;#ffff00&quot;&gt;processConfigBeanDefinitions 完成对配置类注解的解析&lt;/font&gt;&lt;br&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(255, 255, 0);&quot;&gt;&lt;font color=&quot;#ffff00&quot;&gt;String[] candidateNames = registry.getBeanDefinitionNames()：获取所有要处理的 BeanDefinition 名称；&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;color: rgb(255, 255, 0);&quot;&gt;&lt;font color=&quot;#ffff00&quot;&gt;循环遍历处理对应 BeanDefinition 对象：&lt;/font&gt;&lt;/li&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(255, 255, 0);&quot;&gt;判断 BeanDefinition 对象是否已经被处理过：根据 BeanDefinition 对象的 attribute 的属性，如果没有处理过的 BeanDefinition 对象，attribute 属性一定为 null；不为空判断日志级别，处于 debug，则输出提示日志表明该对象已经处理过；&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;接着判断给对象是否是一个注解类，如果是则添加到注解类集合中：configCandidates；&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;li style=&quot;color: rgb(255, 255, 0);&quot;&gt;&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#0000FF;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="2700" y="1694.5" width="1290" height="1027" as="geometry" />
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;fontColor=#00CC00;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RU2fjSCJP_jP4QLkFLcv-2" target="RU2fjSCJP_jP4QLkFLcv-24">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="RU2fjSCJP_jP4QLkFLcv-4" value="org.springframework.context.annotation.ConfigurationClassUtils#checkConfigurationClassCandidate：&lt;br&gt;&lt;ol&gt;&lt;li&gt;&amp;nbsp;获取 BeanDefinition 名称，为 null 则返回 false；&lt;/li&gt;&lt;li&gt;反之，判断该 BeanDefinition 是否属于&amp;nbsp;AnnotationMetadata 类型；(通过注解注入的类都属于 AnnotationMetadata，因为因为该接口继承了 BeanDefinition 接口)，且 bean 名称与 AnnotationMetadata获取的 bean 名称是否相同：相同则从 AnnotationMetadata 中获取&amp;nbsp;metadata 数据元信息&lt;/li&gt;&lt;li&gt;如果属于 AnnotationMetadata， 则判断 BeanDefinition 是否属于 AbstractBeanDefinition；如果属于，则获取当前对象的 class 对象，并判断该对象是否属于指定的几种类型，如果不是泽根据 beanClass 生成对应的 AnnotationMetadata；&lt;/li&gt;&lt;li&gt;如果不属于 AnnotationMetadata，则直接获取元数据读取器，利用原数据读取器获取元数据信息；&lt;/li&gt;&lt;li&gt;判断注解是否是 Configuration 注解，如果是，则给 BeanDefinition 的 attribute 设置属性值：full&lt;/li&gt;&lt;li&gt;反之如果包含&amp;nbsp;@Bean，@ComponentScan, @Import @ImportSource 注解，则设置属性为：lite；&lt;/li&gt;&lt;li&gt;注解类是否添加了 @Order 注解，获取 Order 注解的值，给BeanDefinition 设置 order 属性；&lt;/li&gt;&lt;li&gt;最终返回 true；&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="4160" y="1972" width="1180" height="498" as="geometry" />
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-2" value="&lt;font color=&quot;#ffff00&quot;&gt;在执行后置处理器的时候，这里有一个Spring 内置的处理器实现类&amp;nbsp;ConfigurationClassPostProcessor，该类实现了&amp;nbsp;BeanDefinitionRegistryPostProcessor 接口，而&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;color: rgb(255, 255, 0);&quot;&gt;BeanDefinitionRegistryPostProcessor 继承了&lt;/span&gt;&lt;font color=&quot;#ffff00&quot;&gt;BeanFactoryPostProcessor 接口，因此执行后置处理器的时候会执行&lt;/font&gt;&lt;span style=&quot;color: rgb(255, 255, 0);&quot;&gt;ConfigurationClassPostProcessor.&lt;/span&gt;&lt;br&gt;&lt;font color=&quot;#ffff00&quot;&gt;processConfigBeanDefinitions 完成对配置类注解的解析&lt;/font&gt;&lt;br&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(255, 255, 0);&quot;&gt;&lt;font color=&quot;#ffff00&quot;&gt;String[] candidateNames = registry.getBeanDefinitionNames()：获取所有要处理的 BeanDefinition 名称；&lt;br&gt;&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;color: rgb(255, 255, 0);&quot;&gt;&lt;font color=&quot;#ffff00&quot;&gt;循环遍历处理对应 BeanDefinition 对象：&lt;/font&gt;&lt;/li&gt;&lt;ol style=&quot;&quot;&gt;&lt;li style=&quot;color: rgb(255, 255, 0);&quot;&gt;判断 BeanDefinition 对象是否已经被处理过：根据 BeanDefinition 对象的 attribute 的属性，如果没有处理过的 BeanDefinition 对象，attribute 属性一定为 null；不为空判断日志级别，处于 debug，则输出提示日志表明该对象已经处理过；&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;接着判断给对象是否是一个注解类，如果是则添加到注解类集合中：configCandidates；&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#ffff33&quot;&gt;判断当前类是否该添加了其他注解；&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#ffff33&quot;&gt;如果 BeanDefinition 进行排序，(包含了 @Order 注解)；&lt;/font&gt;&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#ffff33&quot;&gt;获取生成 BeanDefinition 名称的自定义生成器，如果有，则执行对应的名称生成逻辑；没有按照默认生成器执行&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;&lt;li style=&quot;&quot;&gt;&lt;font color=&quot;#00cc00&quot;&gt;创建&amp;nbsp;ConfigurationClassParser 对象，遍历 configCandidates 注解类 调用 org.springframework.context.annotation.ConfigurationClassParser#parse(java.util.Set&amp;lt;org.springframework.beans.factory.config.BeanDefinitionHolder&amp;gt;)集合完成注解解析&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#0000FF;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2700" y="1694.5" width="1810" height="1027" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-24" value="同样是对 BeanDefintion 所属类的判断相同：&lt;br&gt;&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;首先判断 BeanDefinition 是否是注解类 AnnotationMetadata；然后调用&amp;nbsp;org.springframework.context.annotation.ConfigurationClassParser#parse(org.springframework.core.type.AnnotationMetadata, java.lang.String) 完成解析&lt;/font&gt;&lt;/li&gt;&lt;li&gt;如果不是判断 BeanDefinition 是否是普通类 AbstractBeanDefinition，则调用&amp;nbsp;org.springframework.context.annotation.ConfigurationClassParser#parse(org.springframework.core.type.AnnotationMetadata, java.lang.String) 完成解析&lt;/li&gt;&lt;li&gt;如果都不属于，则调用&amp;nbsp;org.springframework.context.annotation.ConfigurationClassParser#parse(java.lang.String, java.lang.String) 完成解析；&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;因为分析的是注解解析，所以按照注解的方法来分析&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#00CC00;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="4740" y="2320" width="1670" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-27" value="" style="group" vertex="1" connectable="0" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="4740" y="1360" width="1180" height="832.5" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-4" value="org.springframework.context.annotation.ConfigurationClassUtils#checkConfigurationClassCandidate：&lt;br&gt;这个类型判断就可以参考上述的 BeanDefinition 分支。&lt;br&gt;&lt;ol&gt;&lt;li&gt;&amp;nbsp;获取 BeanDefinition 名称，为 null 则返回 false；&lt;/li&gt;&lt;li&gt;首先判断 BeanDefinition 是否是注解类 AnnotationMetadata：反之，判断该 BeanDefinition 是否属于&amp;nbsp;AnnotationMetadata 类型；(通过注解注入的类都属于 AnnotationMetadata，因为因为该接口继承了 BeanDefinition 接口)，且 bean 名称与 AnnotationMetadata获取的 bean 名称是否相同：相同则从 AnnotationMetadata 中获取&amp;nbsp;metadata 数据元信息&lt;/li&gt;&lt;li&gt;如果不属于 AnnotationMetadata， 则判断 BeanDefinition 是否属于 AbstractBeanDefinition；如果属于，则获取当前对象的 class 对象，并判断该对象是否属于指定的几种类型，如果不是根据 beanClass 生成对应的 AnnotationMetadata；&lt;/li&gt;&lt;li&gt;如果不属于 AnnotationMetadata，也不属于 AbstractBeanDefinition，则直接获取元数据读取器，利用原数据读取器获取元数据信息；&lt;/li&gt;&lt;li&gt;判断注解是否是 Configuration 注解，如果是，则给 BeanDefinition 的 attribute 设置属性值：full&lt;/li&gt;&lt;li&gt;反之如果包含&amp;nbsp;@Bean，@ComponentScan, @Import @ImportSource 注解，则设置属性为：lite；&lt;/li&gt;&lt;li&gt;注解类是否添加了 @Order 注解，获取 Order 注解的值，给BeanDefinition 设置 order 属性；&lt;/li&gt;&lt;li&gt;最终返回 true；&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="RU2fjSCJP_jP4QLkFLcv-27">
+          <mxGeometry y="334.5" width="1180" height="498" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-26" value="" style="group" vertex="1" connectable="0" parent="RU2fjSCJP_jP4QLkFLcv-27">
+          <mxGeometry x="45" width="1090" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-9" value="BeanDefinition 接口" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="RU2fjSCJP_jP4QLkFLcv-26">
+          <mxGeometry y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-12" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RootBeanDefinition&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="RU2fjSCJP_jP4QLkFLcv-26">
+          <mxGeometry x="284" width="146" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RU2fjSCJP_jP4QLkFLcv-26" source="RU2fjSCJP_jP4QLkFLcv-9" target="RU2fjSCJP_jP4QLkFLcv-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-16" value="GenericBeanDefinition" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="RU2fjSCJP_jP4QLkFLcv-26">
+          <mxGeometry x="284" y="200" width="146" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RU2fjSCJP_jP4QLkFLcv-26" source="RU2fjSCJP_jP4QLkFLcv-9" target="RU2fjSCJP_jP4QLkFLcv-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-8" value="实现类" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RU2fjSCJP_jP4QLkFLcv-7">
+          <mxGeometry x="-0.7116" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-18" value="ScannedGenericBeanDefinition" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="RU2fjSCJP_jP4QLkFLcv-26">
+          <mxGeometry x="590" y="130" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RU2fjSCJP_jP4QLkFLcv-26" source="RU2fjSCJP_jP4QLkFLcv-16" target="RU2fjSCJP_jP4QLkFLcv-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-19" value="AnnotatedBeanDefinition" style="whiteSpace=wrap;html=1;fillColor=#e3c800;strokeColor=#B09500;rounded=0;fontColor=#000000;" vertex="1" parent="RU2fjSCJP_jP4QLkFLcv-26">
+          <mxGeometry x="920" y="200" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-17" value="实现接口" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RU2fjSCJP_jP4QLkFLcv-26" source="RU2fjSCJP_jP4QLkFLcv-18" target="RU2fjSCJP_jP4QLkFLcv-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RU2fjSCJP_jP4QLkFLcv-26" source="RU2fjSCJP_jP4QLkFLcv-22" target="RU2fjSCJP_jP4QLkFLcv-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-21" value="实现接口" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RU2fjSCJP_jP4QLkFLcv-20">
+          <mxGeometry x="0.0481" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-22" value="AnnotatedGenericBeanDefinition" style="whiteSpace=wrap;html=1;fillColor=#fa6800;strokeColor=#C73500;rounded=0;fontColor=#000000;" vertex="1" parent="RU2fjSCJP_jP4QLkFLcv-26">
+          <mxGeometry x="590" y="260" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RU2fjSCJP_jP4QLkFLcv-26" source="RU2fjSCJP_jP4QLkFLcv-16" target="RU2fjSCJP_jP4QLkFLcv-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-15" value="继承类" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RU2fjSCJP_jP4QLkFLcv-14">
+          <mxGeometry x="-0.7813" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-23" value="ConfigurationClassBeanDefinition" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;gradientColor=#97d077;" vertex="1" parent="RU2fjSCJP_jP4QLkFLcv-26">
+          <mxGeometry x="560" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RU2fjSCJP_jP4QLkFLcv-26" source="RU2fjSCJP_jP4QLkFLcv-12" target="RU2fjSCJP_jP4QLkFLcv-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-11" value="继承类" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RU2fjSCJP_jP4QLkFLcv-10">
+          <mxGeometry x="-0.0692" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
