@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-25T00:55:52.449Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="zu_xnujTuxrAjYsspubJ" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-27T00:43:37.373Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="Z1eEQ_aZ9a4gBhdvRsRQ" version="20.3.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="22672" dy="3621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="22202" dy="3319" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -707,11 +707,17 @@
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-37" value="&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;org.springframework.context.annotation.ConfigurationClassParser#getImports：通过 getImports 获取所有 Import 注解的类&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff33&quot;&gt;org.springframework.context.annotation.ConfigurationClassParser#processImports&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#00CC00;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="8261" y="3095.62" width="1239" height="192" as="geometry" />
         </mxCell>
-        <mxCell id="RU2fjSCJP_jP4QLkFLcv-39" value="" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="9690" y="3050" width="120" height="60" as="geometry" />
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;fontColor=#FFFF33;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RU2fjSCJP_jP4QLkFLcv-39" target="RU2fjSCJP_jP4QLkFLcv-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-39" value="org.springframework.context.annotation.ConfigurationClassParser#getImports&lt;br&gt;&lt;ol&gt;&lt;li&gt;Set&amp;lt;SourceClass&amp;gt; imports = new LinkedHashSet&amp;lt;&amp;gt;(): 创建集合，存储包含 @Import 注解的类&lt;/li&gt;&lt;li&gt;Set&amp;lt;SourceClass&amp;gt; visited = new LinkedHashSet&amp;lt;&amp;gt;();&amp;nbsp;创建集合，为了实现递归调用，存放递归关系&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff33&quot;&gt;调用&amp;nbsp;collectImports(sourceClass, imports, visited); 开始解析包含 @Import 注解的类&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="9690" y="2900" width="1200" height="210" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-41" value="" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF33;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="9690" y="3250" width="120" height="60" as="geometry" />
+          <mxGeometry x="9690" y="3210" width="1210" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="RU2fjSCJP_jP4QLkFLcv-43" value="org.springframework.context.annotation.ConfigurationClassParser#collectImports：主要功能就是递归收集包含 @Import 注解类(递归那些嵌套的 @Import 注解)" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF33;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="10960" y="2975" width="960" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
