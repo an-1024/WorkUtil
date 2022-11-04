@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-04T13:14:52.581Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="RGr68HEteIugWWk1eI5i" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-04T13:44:58.278Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="5enqurQQ9L7ScQTAZcYA" version="20.5.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="22672" dy="3621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -722,8 +722,8 @@
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-43" value="org.springframework.context.annotation.ConfigurationClassParser#collectImports：主要功能就是递归收集包含 @Import 注解类(递归那些嵌套的 @Import 注解)" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF33;strokeColor=#82b366;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="12030" y="2620.62" width="960" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HpXuxDKBIxLuHr3aR9rR-0" value="org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorHandler#process&lt;br&gt;&lt;ol&gt;&lt;li&gt;org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorGroupingHandler#processGroupImports：调用该方法获取配置类信息——》grouping.getImports()&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF33;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="6930" y="2710" width="1550" height="160" as="geometry" />
+        <mxCell id="HpXuxDKBIxLuHr3aR9rR-0" value="org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorHandler#process&lt;br&gt;&lt;ol&gt;&lt;li&gt;org.springframework.context.annotation.ConfigurationClassParser.DeferredImportSelectorGroupingHandler#processGroupImports：调用该方法获取配置类信息——》grouping.getImports()——》void process(AnnotationMetadata metadata, DeferredImportSelector selector) 实现该方法完成自动配置类的加载&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF33;strokeColor=#82b366;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="6930" y="2710" width="1550" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
