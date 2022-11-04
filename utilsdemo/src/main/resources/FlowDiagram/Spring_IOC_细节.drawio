@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-01T02:28:02.839Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="84TkwkX57nufXu_7vQfm" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-04T09:50:01.434Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="zcYabHOT4zLvfwt9F_X9" version="20.5.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="22672" dy="3621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="22838" dy="3728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -684,7 +684,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-28" value="parse 方法中调用了 processConfigurationClass 完成解析&lt;br&gt;org.springframework.context.annotation.ConfigurationClassParser#processConfigurationClass&lt;br&gt;&lt;ol&gt;&lt;li&gt;判断当前&amp;nbsp;configClass 是否跳过解析：org.springframework.context.annotation.ConditionEvaluator#shouldSkip(org.springframework.core.type.AnnotatedTypeMetadata, org.springframework.context.annotation.ConfigurationCondition.ConfigurationPhase)&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff33&quot;&gt;调用&amp;nbsp;org.springframework.context.annotation.ConfigurationClassParser#doProcessConfigurationClass 开始解析；&lt;/font&gt;&lt;/li&gt;&lt;li&gt;将解析完成的 configClass 放入&amp;nbsp;configurationClasses 集合中；&amp;nbsp;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="6590" y="2339.5" width="1510" height="291" as="geometry" />
+          <mxGeometry x="6870" y="2389.5" width="1510" height="291" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;fontColor=#FF0000;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RU2fjSCJP_jP4QLkFLcv-31" target="RU2fjSCJP_jP4QLkFLcv-33" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -693,10 +693,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-31" value="org.springframework.context.annotation.ConfigurationClassParser#doProcessConfigurationClass&lt;br&gt;&lt;ol&gt;&lt;li&gt;递归处理配置类的内部配置类：调用&amp;nbsp;org.springframework.context.annotation.ConfigurationClassParser#processMemberClasses 属于方法外递归处理，在processMemberClasses方法中又调用了&amp;nbsp;org.springframework.context.annotation.ConfigurationClassParser#processConfigurationClass；&lt;/li&gt;&lt;li&gt;遍历循环解析 @PropertySource 注解(PropertySource 可以指定多个配置文件)；并将配置文件的属性信息放入environment-》propertySourceList 中；&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;解析 @ComponentScan 注解，对 @ComponentScan 注解的属性值进行解析：org.springframework.context.annotation.ComponentScanAnnotationParser#parse&lt;/font&gt;&lt;/li&gt;&lt;li&gt;判断解析之后的的 BeanDefinition&amp;nbsp; 的类是否还包含了 @ComponentScan 等注解，如果包含需要再次递归处理；&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#00cc00&quot;&gt;处理 @Import 注解：processImports(configClass, sourceClass, getImports(sourceClass), filter, true);&lt;/font&gt;&lt;/li&gt;&lt;li&gt;处理 @ImportSource 导入的配置文件；&lt;/li&gt;&lt;li&gt;处理添加了 @Bean 注解的方法；&lt;/li&gt;&lt;li&gt;处理接口默认的方法实现。从JDK8开始，接口可以有自己的方法实现；&lt;/li&gt;&lt;li&gt;解析配置的父类，如果配置类继承了某个父类，那么配置类的父类也会被解析；&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF33;strokeColor=#82b366;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="6591" y="2826" width="1510" height="524" as="geometry" />
+          <mxGeometry x="8770" y="2273" width="1510" height="524" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-33" value="org.springframework.context.annotation.ComponentScanAnnotationParser#parse&lt;br&gt;&lt;ol&gt;&lt;li&gt;创建 bean 定义的扫描器；ClassPathBeanDefinitionScanner scanner&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;获取 bean 的名称生成器，判断是自定义还是默认的；然后为&amp;nbsp;&lt;/span&gt;scanner 设置 bean 名称生成器的属性；&lt;br&gt;&lt;/li&gt;&lt;li&gt;获取 bean 的代理模式，并设置对应的代理模式。它的作用是对生命周期短的bean提供装饰，使其能被生命周期长的bean正确调用；&lt;/li&gt;&lt;li&gt;设置扫描类路径时使用的资源路径；&lt;/li&gt;&lt;li&gt;获取 @ComponentScan 注解中&amp;nbsp;includeFilters 属性，明确要扫描的路径；&lt;/li&gt;&lt;li&gt;获取 @ComponentScan 注解中&amp;nbsp;excludeFilters 属性，明确不需要扫描的路径；&lt;/li&gt;&lt;li&gt;获取 lazyInit 属性，哪些 beanDefinition 需要懒加载；&lt;br&gt;&lt;/li&gt;&lt;li&gt;获取 basePackages 属性，确定需要扫描的包路径；&lt;br&gt;&lt;/li&gt;&lt;li&gt;获取 basePackages 属性，指定某个类的包的路径进行扫描；&lt;br&gt;&lt;/li&gt;&lt;li&gt;调用&amp;nbsp;org.springframework.context.annotation.ClassPathBeanDefinitionScanner#doScan 完成指定包路径下类的扫描；&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="8261" y="2444.37" width="1250" height="457" as="geometry" />
+          <mxGeometry x="10630" y="2306.5" width="1250" height="457" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;fontColor=#FF0000;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RU2fjSCJP_jP4QLkFLcv-37" target="RU2fjSCJP_jP4QLkFLcv-39" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -705,19 +705,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-37" value="&lt;ol&gt;&lt;li&gt;&lt;font color=&quot;#ff0000&quot;&gt;org.springframework.context.annotation.ConfigurationClassParser#getImports：通过 getImports 获取所有 Import 注解的类&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff33&quot;&gt;org.springframework.context.annotation.ConfigurationClassParser#processImports&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#00CC00;strokeColor=#82b366;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="8261" y="3095.62" width="1239" height="192" as="geometry" />
+          <mxGeometry x="8905.5" y="2970" width="1239" height="192" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;fontColor=#FFFF33;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="RU2fjSCJP_jP4QLkFLcv-39" target="RU2fjSCJP_jP4QLkFLcv-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-39" value="org.springframework.context.annotation.ConfigurationClassParser#getImports&lt;br&gt;&lt;ol&gt;&lt;li&gt;Set&amp;lt;SourceClass&amp;gt; imports = new LinkedHashSet&amp;lt;&amp;gt;(): 创建集合，存储包含 @Import 注解的类&lt;/li&gt;&lt;li&gt;Set&amp;lt;SourceClass&amp;gt; visited = new LinkedHashSet&amp;lt;&amp;gt;();&amp;nbsp;创建集合，为了实现递归调用，存放递归关系&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#ffff33&quot;&gt;调用&amp;nbsp;collectImports(sourceClass, imports, visited); 开始解析包含 @Import 注解的类&lt;/font&gt;&lt;/li&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FF0000;strokeColor=#82b366;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="9690" y="2900" width="1200" height="210" as="geometry" />
+          <mxGeometry x="10310" y="2961" width="1200" height="210" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-41" value="org.springframework.context.annotation.ConfigurationClassParser#processImports&lt;br&gt;&lt;ol&gt;&lt;li&gt;判断 @Import 注解集合是否为空，如果为空则直接返回；&lt;/li&gt;&lt;li&gt;通过栈结构处理循环引入或者链式引入的问题；&lt;/li&gt;&lt;li&gt;将注解类放入栈中，开始遍历循环 @Import 注解类的集合：importCandidates；&lt;/li&gt;&lt;li&gt;判断集合中的类是否实现了 ImportSelector 接口，如果是，通过反射生成 ImportSelector 实例；&lt;/li&gt;&lt;ol&gt;&lt;li&gt;查看 selector 是否有过滤器；&lt;br&gt;&lt;/li&gt;&lt;li&gt;判断是否是实现了 DeferredImportSelector 接口的 selector，则用deferredImportSelectorHandler 处理，&lt;br&gt;&lt;/li&gt;&lt;li&gt;不是实现了 DeferredImportSelector 接口的类， 调用selectImports方法获取要加载的类全限定名称，递归调用本方法继续解析&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;判断集合中的类是否实现了 ImportBeanDefinitionRegistrar&amp;nbsp; 接口，如果是，通过反射生成 ImportBeanDefinitionRegistrar 实例；&lt;/li&gt;&lt;ol&gt;&lt;li&gt;放入importBeanDefinitionRegistrar，用于后面加载：this.deferredImportSelectors.add(holder)；&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;li&gt;如果集合中的类两者都没有实现，处理@Configuration注解类，或者是普通类（直接生成Bean）&lt;/li&gt;&lt;ol&gt;&lt;li&gt;递归回到doProcessConfigurationClass处理@Configuration注解类&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/ol&gt;" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF33;strokeColor=#82b366;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="9690" y="3210" width="1210" height="540" as="geometry" />
+          <mxGeometry x="8920" y="3270" width="1210" height="540" as="geometry" />
         </mxCell>
         <mxCell id="RU2fjSCJP_jP4QLkFLcv-43" value="org.springframework.context.annotation.ConfigurationClassParser#collectImports：主要功能就是递归收集包含 @Import 注解类(递归那些嵌套的 @Import 注解)" style="whiteSpace=wrap;html=1;fontSize=25;align=left;fillColor=#FFFF33;strokeColor=#82b366;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="10960" y="2975" width="960" height="60" as="geometry" />
+          <mxGeometry x="11670" y="3035.62" width="960" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
