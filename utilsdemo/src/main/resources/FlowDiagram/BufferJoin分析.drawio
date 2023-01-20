@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-20T10:19:26.888Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.6" etag="xQEyAqAD0gtgKVN7Yf8T" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-20T11:06:48.046Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.6" etag="4xzAnK9OKqT1s3nU4jUr" type="github">
   <diagram id="j2rWA9-SspOJQfwxpXN0" name="第 1 页">
     <mxGraphModel dx="1979" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -51,7 +51,7 @@
         <mxCell id="ka-1JWK0UKZm-RNWw-po-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-12" target="ka-1JWK0UKZm-RNWw-po-47">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ka-1JWK0UKZm-RNWw-po-65" value="6.准备提交事务，binlog日志写入磁盘" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-58">
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-65" value="6.在提交事务后，将binlog日志写入磁盘" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-58">
           <mxGeometry x="0.4366" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -97,9 +97,9 @@
         <mxCell id="ka-1JWK0UKZm-RNWw-po-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-32" target="ka-1JWK0UKZm-RNWw-po-45">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ka-1JWK0UKZm-RNWw-po-57" value="5.准备提交事务，&lt;br&gt;redo日志写入磁盘" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-46">
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-57" value="5.提交事务后，在一个合适的时间，&lt;br&gt;将redo日志写入磁盘" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-46">
           <mxGeometry x="0.3828" y="-1" relative="1" as="geometry">
-            <mxPoint x="8" y="-8" as="offset" />
+            <mxPoint x="-59" y="-8" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ka-1JWK0UKZm-RNWw-po-32" value="Redo Log Buffer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
