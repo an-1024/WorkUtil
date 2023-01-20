@@ -1,1 +1,213 @@
-<mxfile host="app.diagrams.net" modified="2023-01-20T01:17:24.174Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.5" etag="98kilPxc93Pml9mud8Sl" type="github"><diagram id="6AWExXzYZD_zF3zZWgV1">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-01-20T05:20:59.415Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.6" etag="47nIDxvzBMooQQuowO0y" type="github">
+  <diagram id="j2rWA9-SspOJQfwxpXN0" name="第 1 页">
+    <mxGraphModel dx="1979" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-1" value="客户端执行一条 sql" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="110" width="385" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-6" target="ka-1JWK0UKZm-RNWw-po-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-6" target="ka-1JWK0UKZm-RNWw-po-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-6" value="连接器" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="130" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-1" target="ka-1JWK0UKZm-RNWw-po-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-7" target="ka-1JWK0UKZm-RNWw-po-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-7" value="分析器" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="200" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-7" target="ka-1JWK0UKZm-RNWw-po-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-10" target="ka-1JWK0UKZm-RNWw-po-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-10" target="ka-1JWK0UKZm-RNWw-po-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-10" value="优化器" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="270" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-12" target="ka-1JWK0UKZm-RNWw-po-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-26" value="调用引擎接口" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-25">
+          <mxGeometry x="-0.2691" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-12" target="ka-1JWK0UKZm-RNWw-po-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-65" value="6.准备提交事务，binlog日志写入磁盘" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-58">
+          <mxGeometry x="0.4366" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-12" value="执行器" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="340" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-14" value="如果开启缓存先查询缓存" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="222.5" y="135" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-17" value="管理连接权限与校验" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="682.5" y="135" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-7" target="ka-1JWK0UKZm-RNWw-po-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="672.5" y="220" as="targetPoint" />
+            <mxPoint x="562.5" y="220" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-20" value="词法分析" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="682.5" y="205" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-22" value="执行计划生成索引选择" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="682.5" y="275" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-24" target="ka-1JWK0UKZm-RNWw-po-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-24" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;" vertex="1" parent="1">
+          <mxGeometry x="72.5" y="500" width="640" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-27" value="InnodB 存储引擎" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="352.5" y="510" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-34" value="修改的数据" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-28" target="ka-1JWK0UKZm-RNWw-po-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-32" target="ka-1JWK0UKZm-RNWw-po-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-57" value="5.准备提交事务，&lt;br&gt;redo日志写入磁盘" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-46">
+          <mxGeometry x="0.3828" y="-1" relative="1" as="geometry">
+            <mxPoint x="8" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-32" value="Redo Log Buffer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="562.5" y="570" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-33" target="ka-1JWK0UKZm-RNWw-po-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-56" value="&lt;div style=&quot;text-align: left;&quot;&gt;8.随机写入磁盘，以page&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;为单位写入，执行完这步操作，&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;磁盘中的 name=玛莎-更新&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-53">
+          <mxGeometry x="-0.6371" y="-3" relative="1" as="geometry">
+            <mxPoint x="18" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-33" value="IO 线程" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="625" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-35" value="&lt;font color=&quot;#ff3333&quot;&gt;数据的增删改查都是直接操作 buffer pool。&lt;br&gt;buffer pool 一般设置为机器内存的 60% 左右&lt;/font&gt;" style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="490" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#FF3333;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-12" target="ka-1JWK0UKZm-RNWw-po-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontColor=#FF3333;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-12" target="ka-1JWK0UKZm-RNWw-po-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-39" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="212.5" y="540" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-28" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="ka-1JWK0UKZm-RNWw-po-39">
+          <mxGeometry width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-29" value="BufferPool缓存池" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ka-1JWK0UKZm-RNWw-po-39">
+          <mxGeometry x="30" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-31" value="page&lt;br&gt;name=玛莎&lt;br&gt;。。。" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="ka-1JWK0UKZm-RNWw-po-39">
+          <mxGeometry x="15" y="35" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-40" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#56517e;fillColor=#d0cee2;" vertex="1" parent="1">
+          <mxGeometry x="171.25" y="750" width="202.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-40" target="ka-1JWK0UKZm-RNWw-po-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-54" value="1.加载缓存数据加载 id=1 &lt;br&gt;的记录所在的整页数据" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-49">
+          <mxGeometry x="-0.2426" y="-1" relative="1" as="geometry">
+            <mxPoint x="-73" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-41" value="磁盘文件ibd" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="233" y="760" width="79" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-43" value="page&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;name=玛莎" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b46504;fillColor=#fad7ac;" vertex="1" parent="1">
+          <mxGeometry x="183.75" y="800" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-44" value="。。。" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#b46504;fillColor=#fad7ac;" vertex="1" parent="1">
+          <mxGeometry x="282.5" y="800" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-45" value="redo 日志文件&lt;br&gt;(InnodB 引擎特有)&lt;br&gt;name=玛莎" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#56517e;fillColor=#d0cee2;" vertex="1" parent="1">
+          <mxGeometry x="521.25" y="780" width="202.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-47" target="ka-1JWK0UKZm-RNWw-po-45">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="871" y="920" />
+              <mxPoint x="623" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-61" value="7. 写入 commit 标记，记录到 &lt;br&gt;redo 日志文件中；该标记为了保证事&lt;br&gt;务提交后，redo 与 binlog 数据一致" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="ka-1JWK0UKZm-RNWw-po-48">
+          <mxGeometry x="0.2538" relative="1" as="geometry">
+            <mxPoint x="-47" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-47" value="binlog 日志文件&lt;br&gt;(属于 Server 层)&lt;br&gt;name=玛莎" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#56517e;fillColor=#d0cee2;" vertex="1" parent="1">
+          <mxGeometry x="770" y="775" width="202.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-50" value="undo日志文件&lt;br&gt;(Innodb引擎特有)&lt;br&gt;name=玛莎" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#56517e;fillColor=#d0cee2;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="750" width="202.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-60" value="binlog 主要用来恢复数据库里的数据" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;gradientColor=#ffd966;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="870" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-62" value="如果事务提交成功，buffer pool 里的数据还没有来得及写入磁盘，此时系统宕机，那么就可以用 redo 日志里的数据恢复 buffer pool 里的缓存数据" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;gradientColor=#ffd966;" vertex="1" parent="1">
+          <mxGeometry x="270" y="910" width="278.75" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-63" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#FF0000;" edge="1" parent="1" target="ka-1JWK0UKZm-RNWw-po-45">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="910" as="sourcePoint" />
+            <mxPoint x="460" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-64" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#FF0000;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-60" target="ka-1JWK0UKZm-RNWw-po-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1010" y="810" as="sourcePoint" />
+            <mxPoint x="1060" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-66" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#FF0000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="ka-1JWK0UKZm-RNWw-po-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="520" as="sourcePoint" />
+            <mxPoint x="188.75" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-67" value="如果事务提交失败，要回滚数据。那么就可以用 undo 日志里的数据恢复 buffer pool 里的缓存数据。" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;gradientColor=#ffd966;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="760" width="278.75" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ka-1JWK0UKZm-RNWw-po-68" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#FF0000;entryX=-0.017;entryY=0.461;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ka-1JWK0UKZm-RNWw-po-67" target="ka-1JWK0UKZm-RNWw-po-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-231.25" y="775" as="sourcePoint" />
+            <mxPoint x="-58.75" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
