@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-27T02:25:43.754Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="A-9SpM1Ze-ktkC3H7FsM" version="20.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-27T02:26:34.903Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="ejBrfHSGPP_BMYXGNpVu" version="20.8.8" type="github">
   <diagram name="第 1 页" id="Bo4sXE9dyVkVFhJZGGRL">
     <mxGraphModel dx="637" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -95,6 +95,9 @@
         </mxCell>
         <mxCell id="QnnA91DxhKW6ZJpCzhPi-30" value="采用双端队列，top 头部放入，base 尾部偷取，提高性能，避免多个线程发生获取任务的竞争" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#000000;" vertex="1" parent="QnnA91DxhKW6ZJpCzhPi-34">
           <mxGeometry x="210" y="320" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QnnA91DxhKW6ZJpCzhPi-35" value="&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#ff0000&quot;&gt;CAS&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#000000;" vertex="1" parent="QnnA91DxhKW6ZJpCzhPi-34">
+          <mxGeometry x="120" y="320" width="40" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
