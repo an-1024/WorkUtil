@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-27T02:38:36.919Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="Vj2FZfSBouox2KkyTaBD" version="20.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-27T02:53:35.765Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="UP-S1pe3SXwMMAf86yI7" version="20.8.8" type="github">
   <diagram name="第 1 页" id="Bo4sXE9dyVkVFhJZGGRL">
     <mxGraphModel dx="637" dy="1577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -107,11 +107,26 @@
         <mxCell id="QnnA91DxhKW6ZJpCzhPi-18" value="内部线程" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;container=0;" vertex="1" parent="QnnA91DxhKW6ZJpCzhPi-42">
           <mxGeometry x="540" y="200" width="120" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="QnnA91DxhKW6ZJpCzhPi-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontColor=#000000;" edge="1" parent="QnnA91DxhKW6ZJpCzhPi-42" source="QnnA91DxhKW6ZJpCzhPi-17" target="QnnA91DxhKW6ZJpCzhPi-18">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="QnnA91DxhKW6ZJpCzhPi-39" value="负载均衡(hashCode)实现任务向队列的存放" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontColor=#FF0000;" vertex="1" parent="QnnA91DxhKW6ZJpCzhPi-42">
           <mxGeometry x="261.75" y="60" width="326.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QnnA91DxhKW6ZJpCzhPi-43" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;fontSize=16;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="700" y="130" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QnnA91DxhKW6ZJpCzhPi-44" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: initial;&quot;&gt;外部队列以及线程&lt;/span&gt;&lt;/div&gt;&lt;font color=&quot;#000000&quot;&gt;队列怎么存储：数据结构&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="700" y="80" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QnnA91DxhKW6ZJpCzhPi-47" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;fontSize=16;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="910" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QnnA91DxhKW6ZJpCzhPi-49" value="考虑到读取性能：&lt;br&gt;&lt;ol&gt;&lt;li&gt;使用数组保存，&lt;/li&gt;&lt;li&gt;其次数组具有空间局部性，能够使用缓存行加速；&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="900" y="10" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QnnA91DxhKW6ZJpCzhPi-50" value="通过奇偶性来区分两个队列，所以从奇数 index 和偶数 index 区分外部提交队列、内部提交队列；" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="900" y="205" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="QnnA91DxhKW6ZJpCzhPi-51" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#d6b656;fontSize=16;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="130" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
