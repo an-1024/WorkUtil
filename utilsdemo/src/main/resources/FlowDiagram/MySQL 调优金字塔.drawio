@@ -1,1 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2023-02-02T01:26:25.879Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" version="20.5.3" etag="hEnX4OxNVFjm9OP1xwih" type="github"><diagram id="ONZ2J6l9u_39ZKf2iCnl">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-02T01:50:17.561Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="BDKJKXWbEeuTEKmN6Up7" version="20.5.3" type="github">
+  <diagram id="ONZ2J6l9u_39ZKf2iCnl" name="第 1 页">
+    <mxGraphModel dx="865" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6rM_1OmWmqqh3BUaStus-25" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.acute_triangle;dx=0.5;fontSize=24;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="290" y="170" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6rM_1OmWmqqh3BUaStus-26" value="硬件和 OS 调优" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="377.5" y="200" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6rM_1OmWmqqh3BUaStus-21" value="架构调优" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=24;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="275" y="390" width="310" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6rM_1OmWmqqh3BUaStus-22" value="MySQL 调优" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=24;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="287.5" y="270" width="285" height="86.67" as="geometry" />
+        </mxCell>
+        <mxCell id="6rM_1OmWmqqh3BUaStus-27" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;fontSize=24;rotation=-160;" vertex="1" parent="1">
+          <mxGeometry x="210" y="170" width="32.74" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="6rM_1OmWmqqh3BUaStus-28" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;fontSize=24;rotation=-15;" vertex="1" parent="1">
+          <mxGeometry x="607.26" y="170" width="32.74" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="6rM_1OmWmqqh3BUaStus-29" value="成本越来越高" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="140" y="230" width="60" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6rM_1OmWmqqh3BUaStus-30" value="效果越来越好" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="640" y="220" width="60" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
