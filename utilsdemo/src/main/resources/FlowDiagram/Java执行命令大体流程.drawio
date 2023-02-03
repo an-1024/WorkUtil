@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-03T02:20:21.927Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="NycIiw2zExv_lEFxr4lz" version="20.8.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-03T02:24:31.887Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="K9i-k1XR12AuVWDYYLKz" version="20.8.15" type="github">
   <diagram name="第 1 页" id="dloSt9y01RurNPgCsbOY">
     <mxGraphModel dx="2140" dy="606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -16,21 +16,32 @@
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-5" value="外部系统通过(以 windows 为例) java.exe调用底层的 jvm.dll 文件创建虚拟机(C++实现)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=19;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-210" y="190" width="380" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZTvMeK_ziNfCWvg0XryM-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-14" target="ZTvMeK_ziNfCWvg0XryM-10">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-8" target="ZTvMeK_ziNfCWvg0XryM-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="200" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="340" y="330" />
+              <mxPoint x="340" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-38" value="该类由引导类加载器负责加载&lt;br&gt;其他类加载器" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=19;" vertex="1" connectable="0" parent="ZTvMeK_ziNfCWvg0XryM-11">
+          <mxGeometry x="-0.1646" y="-3" relative="1" as="geometry">
+            <mxPoint x="-103" y="-21" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=19;startArrow=none;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-8" target="ZTvMeK_ziNfCWvg0XryM-26">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="370" y="510" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="220" y="330" />
-              <mxPoint x="220" y="620" />
+              <mxPoint x="340" y="330" />
+              <mxPoint x="340" y="620" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-35" value="C++发起调用" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=19;" vertex="1" connectable="0" parent="ZTvMeK_ziNfCWvg0XryM-31">
           <mxGeometry x="-0.5488" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint y="149" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-8" value="创建一个引导类加载器实列(C++实现)" style="whiteSpace=wrap;html=1;fontSize=19;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;" vertex="1" parent="1">
@@ -41,19 +52,6 @@
         </mxCell>
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-10" value="sun.misc.Launcher.getLauncher" style="whiteSpace=wrap;html=1;fontSize=19;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="675.25" y="10" width="301" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ZTvMeK_ziNfCWvg0XryM-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-8" target="ZTvMeK_ziNfCWvg0XryM-14">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="165" y="330" as="sourcePoint" />
-            <mxPoint x="410" y="80" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="220" y="330" />
-              <mxPoint x="220" y="200" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ZTvMeK_ziNfCWvg0XryM-14" value="该类由引导类加载器负责加载其他类加载器" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;" vertex="1" parent="1">
-          <mxGeometry x="280" y="150" width="150" height="100" as="geometry" />
         </mxCell>
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-16" target="ZTvMeK_ziNfCWvg0XryM-21">
           <mxGeometry relative="1" as="geometry" />
