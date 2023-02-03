@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-03T01:41:36.244Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="pN_LoaMPdFRv5XvImxDV" version="20.8.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-03T02:15:08.291Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="tUUrKq1vVOMcsqHzwnlZ" version="20.8.15" type="github">
   <diagram name="第 1 页" id="dloSt9y01RurNPgCsbOY">
     <mxGraphModel dx="1877" dy="485" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,8 +7,8 @@
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-1" target="ZTvMeK_ziNfCWvg0XryM-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ZTvMeK_ziNfCWvg0XryM-1" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;com.anzhi.classload&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-125" y="70" width="210" height="60" as="geometry" />
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-1" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;com.anzhi.classload.ClassLoadExample&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-205" y="70" width="365" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=19;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-5" target="ZTvMeK_ziNfCWvg0XryM-8">
           <mxGeometry relative="1" as="geometry" />
@@ -16,14 +16,56 @@
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-5" value="外部系统通过(以 windows 为例) java.exe调用底层的 jvm.dll 文件创建虚拟机(C++实现)" style="rounded=0;whiteSpace=wrap;html=1;fontSize=19;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-210" y="190" width="380" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZTvMeK_ziNfCWvg0XryM-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-8" target="ZTvMeK_ziNfCWvg0XryM-10">
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-14" target="ZTvMeK_ziNfCWvg0XryM-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZTvMeK_ziNfCWvg0XryM-8" value="创建一个引导类加载器实列(C++实现)" style="whiteSpace=wrap;html=1;fontSize=19;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-205" y="300" width="370" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ZTvMeK_ziNfCWvg0XryM-10" value="" style="whiteSpace=wrap;html=1;fontSize=19;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="430" y="40" width="120" height="60" as="geometry" />
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;startArrow=none;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-19" target="ZTvMeK_ziNfCWvg0XryM-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-10" value="sun.misc.Launcher.getLauncher" style="whiteSpace=wrap;html=1;fontSize=19;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="675.25" y="10" width="301" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-8" target="ZTvMeK_ziNfCWvg0XryM-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="165" y="330" as="sourcePoint" />
+            <mxPoint x="410" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-14" value="该类由引导类加载器负责加载其他类加载器" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="280" y="150" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-16" target="ZTvMeK_ziNfCWvg0XryM-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-16" value="launcher.getClassLoader()" style="whiteSpace=wrap;html=1;fontSize=19;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700.4200000000001" y="230" width="250.67" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-21" target="ZTvMeK_ziNfCWvg0XryM-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-21" value="classLoader.loadClass(&quot;com.anzhi.classload.ClassLoadExample&quot;)" style="whiteSpace=wrap;html=1;fontSize=19;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535.76" y="400" width="580" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-23" value="调用 loadClass 加载要运行的类 ClassLoadExample" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="710.51" y="320" width="230.49" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=19;endArrow=none;" edge="1" parent="1" source="ZTvMeK_ziNfCWvg0XryM-10" target="ZTvMeK_ziNfCWvg0XryM-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="812.9000000000001" y="70" as="sourcePoint" />
+            <mxPoint x="813" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-19" value="获取运行类自己的类加载器 ClassLoader" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="731" y="120" width="189.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-26" value="" style="whiteSpace=wrap;html=1;fontSize=19;fillColor=#f8cecc;strokeColor=#b85450;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="765.75" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZTvMeK_ziNfCWvg0XryM-28" value="加载完成后，JVM会调用&amp;nbsp;ClassLoadExample 类的执行入口 main 方法" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=19;" vertex="1" parent="1">
+          <mxGeometry x="675.25" y="490" width="339.48" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
