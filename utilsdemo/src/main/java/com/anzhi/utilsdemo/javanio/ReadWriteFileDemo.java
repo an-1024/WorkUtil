@@ -23,17 +23,20 @@ public class ReadWriteFileDemo {
         for(File sourceFile : files){
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(sourceFile), "GBK"));
             BufferedWriter targetWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(targetPath), "GBK"));
-            
+
+            bufferedReader.mark((int)sourceFile.length() + 1);
             // 统计文件行数
             LineNumberReader lineNumberReader = new LineNumberReader(bufferedReader);
             lineNumberReader.skip(sourceFile.length());
             int lineNumber = lineNumberReader.getLineNumber();
+            // 重置文件指针
+            bufferedReader.reset();
 
             System.out.println("----- 文件行数为：" + lineNumber);
-            String bufferLine = null;
+            
+            String bufferLine;
             while((bufferLine = bufferedReader.readLine()) != null){
                 targetWriter.write(bufferLine);
-                
                 targetWriter.newLine();
                 targetWriter.flush();
             }

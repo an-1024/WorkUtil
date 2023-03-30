@@ -18,11 +18,12 @@ left side
             * 线程池的核心参数
                 * corePoolSize：核心线程数；
                 * BlockingQueue：工作队列；
-                * maximumPoolSize：最大非核心线程数了；
+                * maximumPoolSize：最大非核心线程数；
                 * keepAliveTime：非核心线程数存活时间；
                 * TimeUnit：时间单位；
                 * ThreadFactory：创建线程的工厂；
                 * RejectedExecutionHandler：拒绝策略
-                    * 
+                    * AbortPolicy: 直接拒绝，并抛出异常；
+                    * CallerRunsPolicy：谁丢弃，谁执行
             
 @endmindmap
