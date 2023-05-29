@@ -48,6 +48,14 @@ ssh-keygen -t rsa -C "xxxx@xxxxx" #  注意这里的邮箱地址要么上面配�
 
 然后使用 git 命令下拉你自己的仓库代码即可。
 
+# git 修改用户名密码
+```shell
+Git修改用户名密码
+git config --global --replace-all user.name "要修改的用户名"
+git config --global --replace-all user.email"要修改的邮箱"
+git config --global --replace-all user.password "要修改的密码"
+```
+
 
 # Git 操作命令
 ## 代码覆盖
