@@ -5,7 +5,8 @@ import java.lang.reflect.Parameter;
 
 public class ReflectionDemo {
 
-    // 验证 -parameters 参数的作用
+    // 验证 -parameters 参数的作用，
+    // 在 idea 中设置编译器 Java Compiler 的编译参数，添加 -parameters
     public static void main(String[] args) {
         Method[] methods = ReflectionDemo.class.getMethods();
         for (Method method : methods) {
