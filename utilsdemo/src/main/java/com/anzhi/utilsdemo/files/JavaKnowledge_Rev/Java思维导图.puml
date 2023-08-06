@@ -1,4 +1,6 @@
 @startmindmap
 title: Java 突击复习
 *[#Orange] Java 面试突击
+    * 集合相关问题
+        * ArrayList 和 LinkedList 的区别    
 @endmindmap
