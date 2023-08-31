@@ -14,6 +14,9 @@ public class GsonTest {
         System.out.println(resultResponseResult);
         RightActivateResult data = resultResponseResult.getData();
         System.out.println(data);
+        
+        // JSONArray 转 List<Map<String,Object>>
+        
     }
 
 }
