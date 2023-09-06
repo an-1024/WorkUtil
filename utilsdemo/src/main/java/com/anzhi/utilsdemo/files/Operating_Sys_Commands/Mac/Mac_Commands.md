@@ -271,3 +271,7 @@ java -version
 sudo spctl --master-disable
 ```
 然后打开系统偏好设置：打开系统偏好设置 > 安全性与隐私，若显示任何来源，然后再次打开破解软件即可
+
+# Mac 安装pd虚拟机，远程桌面无法使用ctrl或其他符号无法使用问题
+![img.png](../../photo/img.png)
+设置针对游戏优化就可以了。
