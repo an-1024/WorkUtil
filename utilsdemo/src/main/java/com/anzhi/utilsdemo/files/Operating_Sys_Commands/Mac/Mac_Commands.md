@@ -275,3 +275,11 @@ sudo spctl --master-disable
 # Mac 安装pd虚拟机，远程桌面无法使用ctrl或其他符号无法使用问题
 ![img.png](../../photo/9.Mac创建Win10虚拟机远程Win10桌面键盘失灵问题.png)
 设置针对游戏优化就可以了。
+
+# Mac 提示文件已损坏
+![img.png](../../photo/10.Mac安装软件后打开提示已损坏.png)
+执行命令
+```shell
+sudo xattr -r -d com.apple.quarantine /Applications/Sublime\ Text.app  
+```
+sudo xattr -r -d com.apple.quarantine 输入前面的命令，可以直接从访达程序中拖拽程序到终端
