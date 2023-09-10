@@ -172,6 +172,9 @@ p10k configure
 
 ![mac 终端配置](../../photo/2.配置Mac终端最终结果.png)
 
+.zshrc 配置参见配置文件 zshrc。可以直接应用。对应的字体：Hack Nerd Font Mono。地址下载链接：
+> https://www.nerdfonts.com/font-downloads
+
 # mac 安装 unrar
  unrar 是解压 xx.rar 的命令
 
