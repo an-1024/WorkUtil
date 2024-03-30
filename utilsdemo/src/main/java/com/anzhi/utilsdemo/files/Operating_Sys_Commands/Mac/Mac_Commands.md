@@ -274,6 +274,11 @@ java -version
 sudo spctl --master-disable
 ```
 然后打开系统偏好设置：打开系统偏好设置 > 安全性与隐私，若显示任何来源，然后再次打开破解软件即可
+如果仍然提示app损坏：
+则执行如下命令：
+```shell
+sudo xattr -r -d com.apple.quarantine + app 路径
+```
 
 # Mac 安装pd虚拟机，远程桌面无法使用ctrl或其他符号无法使用问题
 ![img.png](../../photo/9.Mac创建Win10虚拟机远程Win10桌面键盘失灵问题.png)
